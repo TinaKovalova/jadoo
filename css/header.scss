@@ -1,0 +1,115 @@
+@import 'variables', 'functions';
+
+.header {
+    font: 500 size-rem(17) /size-em(22) "Google Sans", sans-serif ;
+    color: $header-color;
+    width: 100%;
+    min-height: 134px;
+    padding: size-em(47) 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__container {
+        @include main-container();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: size-percent(15, $max-width-Container); 
+        @include tablet {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        min-width:size-em(115, 17);
+        height: size-em(34, 17);   
+    }
+    .logo{
+        &__img{
+            width: 100%;
+        }
+    }
+
+    &__menu {
+        flex: 1 1 auto;
+               
+    }
+    .menu {
+        &__list {
+          display: flex;
+          justify-content: flex-end;
+          gap: size-percent(60, $max-width-Container); 
+          @include laptop{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+        &__item{
+          
+        }
+        &__link{
+            color: $header-color; 
+            &:hover {
+                font-weight: 600;
+            }
+        }
+        
+      
+    }
+    
+    &__auth {
+        width:size-percent(284, $max-width-Container);
+       
+     }
+     
+    .auth {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: size-percent(52, $max-width-Container);
+
+        &__item {
+           flex: 1 1 size-em(102,17);
+        }
+        &__item-btn{ 
+        flex: 1 1 size-em(102,17);
+        height: size-em(40,17);
+        border-radius: 5px;
+        border: 1px solid $header-color;
+        text-align: center;
+        line-height: size-em(40,17);
+        
+    }
+
+    &__link{
+        color: $header-color; 
+        &:hover {
+            font-weight: 600;
+        }
+    }
+    
+   
+   
+}
+     
+    
+    
+    &__language-selection {
+        width: 80px;
+        border: none;
+        text-align: right;
+        text-transform: uppercase;
+        &:hover {
+            font-weight: 600;
+        }
+    }
+    
+
+}
+
+
+
+

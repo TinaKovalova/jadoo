@@ -1,0 +1,49 @@
+@use 'sass:math';
+@import 'variables';
+
+
+
+@function size-vw($px, $from: $max-width){
+  @return math.div($px, $from) * 100vw ;
+}
+@function size-em($px, $current-size: 16){
+  @return math.div($px, $current-size) + em;
+}
+@function size-rem($px){
+  @return math.div($px, 16) + rem;
+}
+@function size-percent($px, $from){
+  @return math.div($px, $from) * 100%;
+}
+
+
+
+@mixin main-container(){
+    width: size-vw($container-width);
+    padding: 0 size-em($container-padding);
+    margin: 0 auto;
+  }
+
+@mixin desktop() {
+    @media (max-width:$breakpoint-desktop) {
+      @content;
+    }
+  } 
+  
+@mixin laptop() {
+    @media (max-width:$breakpoint-laptop) {
+      @content;
+    }
+  } 
+
+@mixin tablet() {
+    @media (max-width:$breakpoint-tablet) {
+      @content;
+    }
+  } 
+
+@mixin mobile() {
+    @media (max-width:$breakpoint-mobile) {
+      @content;
+    }
+  } 

@@ -1,0 +1,11 @@
+$min-width: 320;
+$max-width: 1440;
+$max-width-Container: 1170;
+$container-padding:10;
+$container-width:$max-width-Container + $container-padding * 2;
+$header-color:#212832;
+$breakpoint-desktop:size-rem($container-width);/*>=992 Desktop, large screens*/
+$breakpoint-laptop:size-rem(991.98);/*>=768 Small screens, laptop*/
+$breakpoint-tablet:size-rem(767.98); /*>=480 Ipads, Tablets*/
+$breakpoint-mobile:size-rem(479.98);/*<=480 mobile*/
+
