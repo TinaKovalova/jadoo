@@ -4,47 +4,70 @@
     font: 500 size-rem(17) /size-em(22) "Google Sans", sans-serif ;
     color: $header-color;
     width: 100%;
-    min-height: 134px;
-    padding: size-em(47) 0;
+    min-height: size-rem(134);
+    padding: size-rem(47) 0;
     position: absolute;
     top: 0;
     left: 0;
+    @include mobile{
+        padding: size-rem(25) 0;
+    }
 
     &__container {
         @include main-container();
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: size-percent(15, $max-width-Container); 
+        column-gap: size-percent(5, $max-width-Container); 
         @include tablet {
+            justify-content: center;
+            align-items: center;
+            
+        }
+        @include mobile{
             flex-direction: column;
             justify-content: center;
+            row-gap:size-rem(10);         
         }
     }
 
     &__logo {
-        min-width:size-em(115, 17);
-        height: size-em(34, 17);   
+      width: size-rem(115);
     }
     .logo{
         &__img{
-            width: 100%;
+             min-width: 100%;
         }
     }
 
     &__menu {
-        flex: 1 1 auto;
+        
+      
                
     }
     .menu {
+        flex: 1 2 auto;
+      
         &__list {
           display: flex;
           justify-content: flex-end;
-          gap: size-percent(60, $max-width-Container); 
-          @include laptop{
+          align-items: center;
+          gap: size-percent(62, $max-width-Container); 
+         @include laptop{
+            position:fixed;
+            width: 100%;
+            top: size-rem(180);
+            transition: top 1.5s;
+            left: 50%;
+            transform: translateX(-50%);
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            row-gap: size-rem(30); 
+            font-size: 22px;
+        }
+        @include mobile{
+            top: size-rem(185);
         }
         }
         &__item{
@@ -53,7 +76,8 @@
         &__link{
             color: $header-color; 
             &:hover {
-                font-weight: 600;
+                font-weight: 500;
+                text-decoration: underline;
             }
         }
         
@@ -61,27 +85,31 @@
     }
     
     &__auth {
-        width:size-percent(284, $max-width-Container);
        
+            
      }
      
     .auth {
+        flex: 0 1 size-percent(278, $max-width-Container);
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        column-gap: size-percent(52, $max-width-Container);
+        column-gap: size-percent(52,$max-width-Container );
 
         &__item {
-           flex: 1 1 size-em(102,17);
+          
         }
         &__item-btn{ 
-        flex: 1 1 size-em(102,17);
+        flex: 0 0 size-em(102,17);
         height: size-em(40,17);
         border-radius: 5px;
         border: 1px solid $header-color;
         text-align: center;
         line-height: size-em(40,17);
-        
+        &:hover{
+            border: 3px solid $header-color;
+        }
+                
     }
 
     &__link{
@@ -90,7 +118,10 @@
             font-weight: 600;
         }
     }
-    
+    @include mobile{
+        justify-content: center;
+               
+    }
    
    
 }
@@ -98,7 +129,7 @@
     
     
     &__language-selection {
-        width: 80px;
+        flex: 0 1 size-percent(75, $max-width-Container);
         border: none;
         text-align: right;
         text-transform: uppercase;

@@ -1,6 +1,134 @@
+@import '_variables','_functions';
 .main {
     width: 100%;
     flex: 1 1 auto;
-    font-family: 'Volkhov', serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: size-em(30);
+    font-weight: 500;
+
+
+    .intro {
+        &__container{
+            @include main-container();
+            min-height: size-rem(757);
+            margin-top: size-rem(105);
+            display: flex;
+            align-items: center;
+            background: url('../images/intro/traveller.svg')right no-repeat;
+            @media (max-width: size-rem(1300)){
+                 background: linear-gradient(85deg, #FFFFFF, transparent 99%), url('../images/intro/traveller.svg')right no-repeat;
+             }
+             @include laptop(){
+                background: transparent;
+                margin-top: size-rem(350);
+                justify-content: center;            
+             }
+
+        }
+        &__content {
+            max-width: size-rem(547);
+           
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            min-height: size-em(535);
+            margin-left: size-em(10);
+            &__subtitle {
+                color: #DF6951;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: size-em(20);
+            }
+            &__title {
+                font-family: 'Volkhov', serif;
+                font-weight: 700;
+                font-size: size-em(84);
+                line-height: size-em(89, 84);
+                letter-spacing: -0.04em;
+                color: #181E4B;
+                margin: size-rem(24) 0 size-rem(30) 0;
+            }
+            &__text {
+                color: #5E6282;
+            }
+            &__actions {
+
+            }
+            .actions {
+                margin-top: size-rem(34);
+              
+                &__list {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: size-em(16);
+                    align-items: center;
+                    max-width: size-rem(379);
+                   
+                }
+                &__item {
+                }
+                &__item-play{
+                    font-size: size-rem(17);
+                    line-height: size-rem(26);
+                    min-width:size-rem(92);
+                    > .item-link {
+                        color:#686D77;
+                    }
+                    
+                }
+                &__item-play::before{
+                    content: '';
+                    display: inline-block;
+                    width: size-rem(52);
+                    height:size-rem(52);
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    margin-right: size-rem(21);
+                    background: url('../images/intro/play_button.svg') center;
+                    background-position-y: -15px;            
+                }
+                &__item-orange-btn{
+                    font:500 size-rem(18) 'Google Sans',sans-serif;
+                    line-height: size-rem(23);
+                    min-width: size-rem(170);
+                    padding: size-rem(18) size-rem(26) ;
+                    background: #F1A501;
+                    color: #FFFFFF;
+                    box-shadow: 0px size-rem(20) size-rem(35) rgba(241, 165, 1, 0.15);
+                    border-radius: size-rem(10);
+                    > .item-link{
+                        color: #FFFFFF;
+                    }
+                }
+                @include mobile {
+                    &__list {
+                        justify-content: center;
+                    }         
+                 }
+            }
+            @include laptop(){
+                &__subtitle{
+                    font-size: size-rem(16);
+                }
+                &__title{
+                    font-size: size-em(42);
+                    line-height: size-em(45, 42);
+                }  
+                &__text {
+                   text-align: justify;
+                }
+                          
+             }
+             
+             
+           
+        }
+       
+
+
+    }
+   
    
 }
