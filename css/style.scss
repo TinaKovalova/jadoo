@@ -1,34 +1,14 @@
-
-@import '_variables','_functions';
+@import '_fonts', '_variables', '_functions';
 @import '_reset';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap');
-@font-face {
-    font-family: 'Google Sans';
-    src: local('Google Sans Medium'), local('Google-Sans-Medium'),
-        url('../fonts/GoogleSans-Medium.woff2') format('woff2'),
-        url('../fonts/GoogleSans-Medium.woff') format('woff'),
-        url('../fonts/GoogleSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-
-
 .page {
-    font:500 1rem 'Poppins', sans-serif;
-    line-height: size-em(20);
-    .wrapper {
-        min-height: 100vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        @import 'header', 'main', 'footer';
-    }
-
-
+  font: 500 1rem 'Poppins', sans-serif;
+  line-height: size-em(20);
+  .wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @import 'header', 'main', 'footer';
+  }
 }
-  
-
-
-
-

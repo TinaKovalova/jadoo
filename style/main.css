@@ -20,7 +20,6 @@
   padding: 0 0.625em;
   margin: 0 auto;
   min-height: 47.3125rem;
-  margin-top: 6.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,16 +30,18 @@
 }
 @media (max-width: 81.25rem) {
   .main .intro__container {
-    background: linear-gradient(85deg, #FFFFFF, transparent 99%), url("../images/intro/traveller.svg") right no-repeat;
+    background: linear-gradient(85deg, #ffffff, transparent 99%), url("../images/intro/traveller.svg") right no-repeat;
   }
 }
 @media (max-width: size-rem(991.98)) {
   .main .intro__container {
     background: transparent;
-    margin-top: 21.875rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 .main .intro__content {
@@ -58,7 +59,7 @@
   margin-left: 0.625em;
 }
 .main .intro .content__subtitle {
-  color: #DF6951;
+  color: #df6951;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.25em;
@@ -69,11 +70,11 @@
   font-size: 5.25em;
   line-height: 1.0595238095em;
   letter-spacing: -0.04em;
-  color: #181E4B;
+  color: #181e4b;
   margin: 1.5rem 0 1.875rem 0;
 }
 .main .intro .content__text {
-  color: #5E6282;
+  color: #5e6282;
 }
 .main .intro .content .actions {
   margin-top: 2.125rem;
@@ -99,7 +100,7 @@
   min-width: 5.75rem;
 }
 .main .intro .content .actions__item-play > .item-link {
-  color: #686D77;
+  color: #686d77;
 }
 .main .intro .content .actions__item-play::before {
   content: "";
@@ -117,14 +118,14 @@
   line-height: 1.4375rem;
   min-width: 10.625rem;
   padding: 1.125rem 1.625rem;
-  background: #F1A501;
-  color: #FFFFFF;
+  background: #f1a501;
+  color: #ffffff;
   -webkit-box-shadow: 0px 1.25rem 2.1875rem rgba(241, 165, 1, 0.15);
           box-shadow: 0px 1.25rem 2.1875rem rgba(241, 165, 1, 0.15);
   border-radius: 0.625rem;
 }
 .main .intro .content .actions__item-orange-btn > .item-link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (max-width: size-rem(479.98)) {
   .main .intro .content .actions__list {
