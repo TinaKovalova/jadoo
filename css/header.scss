@@ -51,7 +51,6 @@
         justify-content: space-around;
       }
       @include mobile {
-        /* top: size-rem(185);*/
         flex-direction: column;
         justify-content: center;
         row-gap: size-rem(10);
@@ -117,6 +116,7 @@
     border: none;
     text-align: right;
     text-transform: uppercase;
+    background: transparent;
     &:hover {
       font-weight: 600;
     }

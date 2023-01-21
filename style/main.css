@@ -1,7 +1,19 @@
+.main .services__title, .main .intro .content__title {
+  font-weight: 700;
+  font-family: "Volkhov", serif;
+  color: #14183E;
+}
+
 /*>=992 Desktop, large screens*/
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
+.main .services__title, .main .intro .content__title {
+  font-weight: 700;
+  font-family: "Volkhov", serif;
+  color: #14183E;
+}
+
 /*>=992 Desktop, large screens*/
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
@@ -11,9 +23,10 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  font-family: "Poppins", sans-serif;
   line-height: 1.875em;
   font-weight: 500;
+  position: relative;
+  top: -1.25rem;
 }
 .main .intro__container {
   width: 82.6388888889vw;
@@ -30,7 +43,7 @@
 }
 @media (max-width: 81.25rem) {
   .main .intro__container {
-    background: linear-gradient(85deg, #ffffff, transparent 99%), url("../images/intro/traveller.svg") right no-repeat;
+    background: transparent;
   }
 }
 @media (max-width: size-rem(991.98)) {
@@ -42,6 +55,8 @@
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    padding-top: 3.125rem;
+    min-height: auto;
   }
 }
 .main .intro__content {
@@ -65,16 +80,14 @@
   font-size: 1.25em;
 }
 .main .intro .content__title {
-  font-family: "Volkhov", serif;
-  font-weight: 700;
   font-size: 5.25em;
   line-height: 1.0595238095em;
   letter-spacing: -0.04em;
-  color: #181e4b;
+  color: #181E4B;
   margin: 1.5rem 0 1.875rem 0;
 }
 .main .intro .content__text {
-  color: #5e6282;
+  color: #5E6282;
 }
 .main .intro .content .actions {
   margin-top: 2.125rem;
@@ -145,4 +158,133 @@
   .main .intro .content__text {
     text-align: justify;
   }
+}
+.main .services__container {
+  width: 82.6388888889vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  padding-top: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7.375rem;
+     -moz-column-gap: 7.375rem;
+          column-gap: 7.375rem;
+  row-gap: 0.625rem;
+  position: relative;
+}
+.main .services__container::after {
+  content: url("../images/services/plus-decor.svg");
+  position: absolute;
+  top: 5rem;
+  right: -4.78125rem;
+  z-index: -10;
+}
+.main .services__subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.6875rem;
+  color: #5E6282;
+}
+.main .services__title {
+  font-size: 3.125rem;
+  line-height: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.main .services .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.9375rem;
+  padding: 5.3125rem 1.25rem;
+  -webkit-column-gap: 7.375rem;
+     -moz-column-gap: 7.375rem;
+          column-gap: 7.375rem;
+  row-gap: 7.375rem;
+}
+.main .services .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11.375rem;
+  min-height: 14.3125rem;
+  row-gap: 0.9375rem;
+  position: relative;
+  z-index: 100;
+}
+.main .services .category__img-block {
+  width: 5rem;
+  height: 5rem;
+}
+.main .services .category__img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main .services .category__img_bigger {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+.main .services .category__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.6875rem;
+  text-align: center;
+  color: #1E1D4C;
+}
+.main .services .category__text {
+  text-align: center;
+  width: 11.3125rem;
+  min-height: 4.875rem;
+  line-height: 1.625rem;
+  color: #5E6282;
+}
+.main .services .category:hover::after {
+  content: url("../images/services/rectangle-decor.svg");
+  position: absolute;
+  bottom: -4.75rem;
+  left: -4.75rem;
+  z-index: -3;
+}
+.main .services .category:hover::before {
+  content: "";
+  display: block;
+  width: 16.6875rem;
+  min-height: 19.625rem;
+  top: -2.5625rem;
+  left: -2.5625rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 2.25rem;
+  position: absolute;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

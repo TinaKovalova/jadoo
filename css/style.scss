@@ -2,13 +2,27 @@
 @import '_reset';
 
 .page {
-  font: 500 1rem 'Poppins', sans-serif;
+  @extend %main-text-style;
+  font-weight: 500;
+  font-size: 1rem;
   line-height: size-em(20);
   .wrapper {
     min-height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 10;
     @import 'header', 'main', 'footer';
+  }
+  &::before{
+    content: url('../images/intro/decore.svg');
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0px;
+
+   
+ 
   }
 }

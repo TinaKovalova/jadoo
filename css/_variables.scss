@@ -4,6 +4,21 @@ $max-width-Container: 1170;
 $container-padding:10;
 $container-width:$max-width-Container + $container-padding * 2;
 $header-color:#212832;
+$main-title-color:#181E4B;
+$title-color:#14183E;
+$small-title-color:#1E1D4C;
+$main-text-color:#5E6282;
+
+%title-font-style{
+    font-weight: 700;
+    font-family: 'Volkhov', serif;
+    color: $title-color;
+}
+%main-text-style{
+    font-family: 'Poppins', sans-serif;
+
+}
+
 $breakpoint-desktop:size-rem($container-width); /*>=992 Desktop, large screens*/
 $breakpoint-laptop:size-rem(991.98);/*>=768 Small screens, laptop*/
 $breakpoint-tablet:size-rem(767.98); /*>=480 Ipads, Tablets*/

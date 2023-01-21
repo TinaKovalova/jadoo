@@ -90,7 +90,6 @@
 }
 @media (max-width: size-rem(479.98)) {
   .header .menu__list {
-    /* top: size-rem(185);*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -183,6 +182,7 @@
   border: none;
   text-align: right;
   text-transform: uppercase;
+  background: transparent;
 }
 .header__language-selection:hover {
   font-weight: 600;
