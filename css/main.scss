@@ -14,12 +14,11 @@
       display: flex;
       align-items: center;
       background: url('../images/intro/traveller.svg') right no-repeat;
-      @media (max-width: size-rem(1300)) {
-        background: transparent;
-      }
-      @include laptop() {
+      @media (max-width: size-rem(1200)) {
         background: transparent;
         justify-content: center;
+      }
+      @include laptop() {
         align-items: stretch;
         padding-top: size-rem(50);
         min-height: auto;
@@ -49,7 +48,7 @@
         margin: size-rem(24) 0 size-rem(30) 0;
       }
       &__text {
-        color: $main-text-color;
+        max-width: size-rem(477);
       }
       &__actions {
       }
@@ -140,18 +139,10 @@
 
     &__subtitle {
       text-transform: uppercase;
-      text-align: center;
-      font-size: size-rem(18);
-      font-weight: 600;
-      line-height: size-rem(27);
-      color: $main-text-color;
+      @extend %subtitle-text-style;
     }
     &__title {
-      @extend %title-font-style;
-      font-size: size-rem(50);
-      line-height: size-rem(64);
-      text-align: center;
-      text-transform: capitalize;
+      @extend %title-text-style;
     }
     .categories {
       display: flex;
@@ -202,7 +193,6 @@
         width: size-rem(181);
         min-height: size-rem(78);
         line-height: size-rem(26);
-        color: $main-text-color;
       }
       &:hover {
         &::after {
@@ -229,6 +219,109 @@
           border-radius: size-rem(36);
           position: absolute;
           z-index: -1;
+        }
+      }
+    }
+  }
+
+  .top-selling {
+    &__container {
+      @include main-container();
+      min-height: size-rem(740);
+      padding-top: size-rem(60);
+      display: flex;
+      flex-direction: column;
+      row-gap: size-rem(8);
+    }
+    &__subtitle {
+      @extend %subtitle-text-style;
+      text-transform: capitalize;
+    }
+    &__title {
+      @extend %title-text-style;
+    }
+    .destinations {
+      padding: size-rem(52) size-rem(33);
+      display: flex;
+      flex-wrap: wrap;
+      gap: size-rem(35);
+      justify-content: space-around;
+
+      &__item {
+      }
+      .destination {
+        width: size-rem(315);
+        height: size-rem(457);
+        border-radius: size-rem(24);
+        background: transparent;
+        z-index: 0;
+        position: relative;
+        display: flex;
+        box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+          drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+          drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+          drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+          drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+          drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08),
+            0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03),
+            0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02),
+            0px 20px 13px rgba(0, 0, 0, 0.01),
+            0px 8.14815px 6.51852px rgba(0, 0, 0, 0.1),
+            0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+        }
+        &:last-child:after {
+          content: url('../images/top-selling/spring-decore.svg');
+          position: absolute;
+          right: size-rem(-62);
+          top: size-rem(154);
+          display: inline-block;
+          width: size-rem(98);
+          height: size-rem(254);
+        }
+
+        &__img {
+          min-width: 150%;
+          position: absolute;
+          top: -1px;
+          left: size-rem(-79);
+          z-index: 1;
+        }
+        &__data {
+          flex: 1 1 100%;
+          height: size-percent(130, 457);
+          padding: size-rem(27) size-rem(25) size-rem(20) size-rem(20);
+          border-radius: 0px 0px size-rem(24) size-rem(24);
+          align-self: flex-end;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          z-index: 10;
+          background: #ffffff;
+        }
+
+        &__name,
+        &__price {
+          font-size: size-rem(18);
+          line-height: size-rem(22);
+        }
+
+        &__link {
+          display: inline-block;
+          position: relative;
+          margin-left: size-rem(32);
+          flex: 1 1 100%;
+          color: $main-text-color;
+          &::before {
+            content: url('../images/top-selling/navigation.svg');
+            width: size-rem(20);
+            height: size-rem(20);
+            position: absolute;
+            top: size-rem(7);
+            left: size-rem(-28);
+          }
         }
       }
     }

@@ -1,17 +1,47 @@
-.main .services__title, .main .intro .content__title {
+.main .intro .content__title, .main .top-selling__title, .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
+}
+
+.main .top-selling__title, .main .services__title {
+  font-size: size-rem(50);
+  line-height: size-rem(64);
   color: #14183E;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.main .top-selling__subtitle, .main .services__subtitle {
+  text-align: center;
+  font-size: size-rem(18);
+  font-weight: 600;
+  line-height: size-rem(27);
+  color: #5E6282;
 }
 
 /*>=992 Desktop, large screens*/
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.main .services__title, .main .intro .content__title {
+.main .intro .content__title, .main .top-selling__title, .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
+}
+
+.main .top-selling__title, .main .services__title {
+  font-size: size-rem(50);
+  line-height: size-rem(64);
   color: #14183E;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.main .top-selling__subtitle, .main .services__subtitle {
+  text-align: center;
+  font-size: size-rem(18);
+  font-weight: 600;
+  line-height: size-rem(27);
+  color: #5E6282;
 }
 
 /*>=992 Desktop, large screens*/
@@ -41,17 +71,16 @@
           align-items: center;
   background: url("../images/intro/traveller.svg") right no-repeat;
 }
-@media (max-width: 81.25rem) {
-  .main .intro__container {
-    background: transparent;
-  }
-}
-@media (max-width: size-rem(991.98)) {
+@media (max-width: 75rem) {
   .main .intro__container {
     background: transparent;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: size-rem(991.98)) {
+  .main .intro__container {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -87,7 +116,7 @@
   margin: 1.5rem 0 1.875rem 0;
 }
 .main .intro .content__text {
-  color: #5E6282;
+  max-width: 29.8125rem;
 }
 .main .intro .content .actions {
   margin-top: 2.125rem;
@@ -189,17 +218,6 @@
 }
 .main .services__subtitle {
   text-transform: uppercase;
-  text-align: center;
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 1.6875rem;
-  color: #5E6282;
-}
-.main .services__title {
-  font-size: 3.125rem;
-  line-height: 4rem;
-  text-align: center;
-  text-transform: capitalize;
 }
 .main .services .categories {
   display: -webkit-box;
@@ -265,7 +283,6 @@
   width: 11.3125rem;
   min-height: 4.875rem;
   line-height: 1.625rem;
-  color: #5E6282;
 }
 .main .services .category:hover::after {
   content: url("../images/services/rectangle-decor.svg");
@@ -287,4 +304,109 @@
   border-radius: 2.25rem;
   position: absolute;
   z-index: -1;
+}
+.main .top-selling__container {
+  width: 82.6388888889vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  min-height: 46.25rem;
+  padding-top: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.5rem;
+}
+.main .top-selling__subtitle {
+  text-transform: capitalize;
+}
+.main .top-selling .destinations {
+  padding: 3.25rem 2.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.1875rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main .top-selling .destinations .destination {
+  width: 19.6875rem;
+  height: 28.5625rem;
+  border-radius: 1.5rem;
+  background: transparent;
+  z-index: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+.main .top-selling .destinations .destination:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.1), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.1), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+}
+.main .top-selling .destinations .destination:last-child:after {
+  content: url("../images/top-selling/spring-decore.svg");
+  position: absolute;
+  right: -3.875rem;
+  top: 9.625rem;
+  display: inline-block;
+  width: 6.125rem;
+  height: 15.875rem;
+}
+.main .top-selling .destinations .destination__img {
+  min-width: 150%;
+  position: absolute;
+  top: -1px;
+  left: -4.9375rem;
+  z-index: 1;
+}
+.main .top-selling .destinations .destination__data {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  height: 28.4463894967%;
+  padding: 1.6875rem 1.5625rem 1.25rem 1.25rem;
+  border-radius: 0px 0px 1.5rem 1.5rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+  background: #ffffff;
+}
+.main .top-selling .destinations .destination__name, .main .top-selling .destinations .destination__price {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+.main .top-selling .destinations .destination__link {
+  display: inline-block;
+  position: relative;
+  margin-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  color: #5E6282;
+}
+.main .top-selling .destinations .destination__link::before {
+  content: url("../images/top-selling/navigation.svg");
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 0.4375rem;
+  left: -1.75rem;
 }/*# sourceMappingURL=main.css.map */

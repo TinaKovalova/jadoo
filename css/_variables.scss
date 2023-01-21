@@ -12,11 +12,26 @@ $main-text-color:#5E6282;
 %title-font-style{
     font-weight: 700;
     font-family: 'Volkhov', serif;
+}
+%title-text-style{
+    @extend %title-font-style;
+    font-size: size-rem(50);
+    line-height: size-rem(64);
     color: $title-color;
+    text-transform: capitalize;
+    text-align: center;
 }
 %main-text-style{
     font-family: 'Poppins', sans-serif;
+    color: $main-text-color;
 
+}
+%subtitle-text-style{
+    text-align: center;
+    font-size: size-rem(18);
+    font-weight: 600;
+    line-height: size-rem(27);
+    color: $main-text-color;
 }
 
 $breakpoint-desktop:size-rem($container-width); /*>=992 Desktop, large screens*/
