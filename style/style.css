@@ -5,12 +5,12 @@
   font-weight: 500;
   font-style: normal;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
 
-.page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: size-rem(50);
   line-height: size-rem(64);
   color: #14183E;
@@ -23,7 +23,7 @@
   color: #5E6282;
 }
 
-.page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
+.page .wrapper .main .booking-steps .booking__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
   text-align: center;
   font-size: size-rem(18);
   font-weight: 600;
@@ -35,12 +35,12 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.page .wrapper .main .intro .content__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
 
-.page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: size-rem(50);
   line-height: size-rem(64);
   color: #14183E;
@@ -53,7 +53,7 @@
   color: #5E6282;
 }
 
-.page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
+.page .wrapper .main .booking-steps .booking__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
   text-align: center;
   font-size: size-rem(18);
   font-weight: 600;
@@ -700,11 +700,11 @@ template {
   /*>=480 Ipads, Tablets*/
   /*<=480 mobile*/
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -715,18 +715,18 @@ template {
   font-family: "Poppins", sans-serif;
   color: #5E6282;
 }
-.page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
+.page .wrapper .main .booking-steps .booking__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.6875rem;
   color: #5E6282;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -737,7 +737,7 @@ template {
   font-family: "Poppins", sans-serif;
   color: #5E6282;
 }
-.page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
+.page .wrapper .main .booking-steps .booking__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
@@ -925,11 +925,11 @@ template {
 .page .wrapper .header__language-selection:hover {
   font-weight: 600;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -940,18 +940,18 @@ template {
   font-family: "Poppins", sans-serif;
   color: #5E6282;
 }
-.page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
+.page .wrapper .main .booking-steps .booking__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.6875rem;
   color: #5E6282;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -962,7 +962,7 @@ template {
   font-family: "Poppins", sans-serif;
   color: #5E6282;
 }
-.page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
+.page .wrapper .main .booking-steps .booking__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .services__subtitle {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
@@ -1256,6 +1256,9 @@ template {
       justify-content: space-around;
 }
 .page .wrapper .main .top-selling .destinations .destination {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
   width: 19.6875rem;
   height: 28.5625rem;
   border-radius: 1.5rem;
@@ -1271,8 +1274,8 @@ template {
 .page .wrapper .main .top-selling .destinations .destination:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.1), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
-          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.1), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .page .wrapper .main .top-selling .destinations .destination:last-child:after {
   content: url("../images/top-selling/spring-decore.svg");
@@ -1285,9 +1288,12 @@ template {
 }
 .page .wrapper .main .top-selling .destinations .destination__img {
   min-width: 150%;
+  height: auto;
   position: absolute;
-  top: -1px;
-  left: -4.9375rem;
+  -o-object-position: -75px -1px;
+     object-position: -75px -1px;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 .page .wrapper .main .top-selling .destinations .destination__data {
@@ -1331,11 +1337,115 @@ template {
   top: 0.4375rem;
   left: -1.75rem;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title {
+@media (max-width: 29.99875rem) {
+  .page .wrapper .main .top-selling .destinations .destination {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+.page .wrapper .main .booking-steps__container {
+  width: 82.6388888889vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  min-height: 45.875rem;
+  padding-top: 7.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+.page .wrapper .main .booking-steps .booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 4.358974359%;
+  padding-right: 1.9658119658%;
+  min-width: 50%;
+}
+.page .wrapper .main .booking-steps .booking__subtitle {
+  text-align: left !important;
+}
+.page .wrapper .main .booking-steps .booking__title {
+  text-align: left !important;
+  padding: 0.9375rem 0 2.125rem;
+}
+.page .wrapper .main .booking-steps .booking .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  gap: 3rem;
+  padding-top: 0.25rem;
+}
+.page .wrapper .main .booking-steps .booking .steps__item {
+  max-width: 24.6875rem;
+  min-height: 4.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.3125rem;
+}
+.page .wrapper .main .booking-steps .booking .steps__img {
+  width: 2.9375rem;
+  min-height: 3rem;
+  margin-top: 0.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.page .wrapper .main .booking-steps .booking .steps .destination-img {
+  background-image: url("../images/booking/destination-icon.svg");
+}
+.page .wrapper .main .booking-steps .booking .steps .payment-img {
+  background-image: url("../images/booking/payment-icon.svg");
+}
+.page .wrapper .main .booking-steps .booking .steps .transfer-img {
+  background-image: url("../images/booking/transfer-icon.svg");
+}
+.page .wrapper .main .booking-steps .booking .steps__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 82.7848101266%;
+}
+.page .wrapper .main .booking-steps .booking .steps__name {
+  font-weight: 700;
+}
+.page .wrapper .main .booking-steps .booking .steps__text {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title {
+.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -1346,18 +1456,18 @@ template {
   font-family: "Poppins", sans-serif;
   color: #5E6282;
 }
-.page .wrapper .main .services__subtitle, .page .wrapper .main .top-selling__subtitle {
+.page .wrapper .main .services__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .booking-steps .booking__subtitle {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.6875rem;
   color: #5E6282;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title {
+.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -1368,7 +1478,7 @@ template {
   font-family: "Poppins", sans-serif;
   color: #5E6282;
 }
-.page .wrapper .main .services__subtitle, .page .wrapper .main .top-selling__subtitle {
+.page .wrapper .main .services__subtitle, .page .wrapper .main .top-selling__subtitle, .page .wrapper .main .booking-steps .booking__subtitle {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;

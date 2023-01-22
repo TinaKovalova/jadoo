@@ -223,7 +223,6 @@
       }
     }
   }
-
   .top-selling {
     &__container {
       @include main-container();
@@ -250,6 +249,7 @@
       &__item {
       }
       .destination {
+        flex: 0 1 300px;
         width: size-rem(315);
         height: size-rem(457);
         border-radius: size-rem(24);
@@ -265,12 +265,8 @@
           drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
         &:hover {
           transform: scale(1.03);
-          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08),
-            0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03),
-            0px 38.5185px 25.4815px rgba(0, 0, 0, 0.02),
-            0px 20px 13px rgba(0, 0, 0, 0.01),
-            0px 8.14815px 6.51852px rgba(0, 0, 0, 0.1),
-            0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         }
         &:last-child:after {
           content: url('../images/top-selling/spring-decore.svg');
@@ -284,9 +280,10 @@
 
         &__img {
           min-width: 150%;
+          height: auto;
           position: absolute;
-          top: -1px;
-          left: size-rem(-79);
+          object-position: -75px -1px;
+          object-fit: contain;
           z-index: 1;
         }
         &__data {
@@ -322,6 +319,89 @@
             top: size-rem(7);
             left: size-rem(-28);
           }
+        }
+        @include mobile() {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+  .booking-steps {
+    &__container {
+      @include main-container();
+      min-height: size-rem(734);
+      padding-top: size-rem(121);
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: size-rem(8);
+    }
+    &__content {
+    }
+    .booking {
+      display: flex;
+      flex-direction: column;
+      padding-left: size-percent(51, $max-width-Container);
+      padding-right: size-percent(23, $max-width-Container);
+      min-width: 50%;
+
+      &__subtitle {
+        @extend %subtitle-text-style;
+        text-align: left !important;
+      }
+      &__title {
+        @extend %title-text-style;
+        text-align: left !important;
+        padding: size-rem(15) 0 size-rem(34);
+      }
+      &__steps {
+      }
+
+      .steps {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        gap: size-rem(48);
+        padding-top: size-rem(4);
+
+        &__item {
+          max-width: size-rem(395);
+          min-height: size-rem(65);
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: size-rem(21);
+        }
+        &__img {
+          width: size-rem(47);
+          min-height: size-rem(48);
+          margin-top: size-rem(8);
+          flex-shrink: 0;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-position: center;
+        }
+        .destination-img {
+          background-image: url('../images/booking/destination-icon.svg');
+        }
+        .payment-img {
+          background-image: url('../images/booking/payment-icon.svg');
+        }
+        .transfer-img {
+          background-image: url('../images/booking/transfer-icon.svg');
+        }
+
+        &__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          max-width: size-percent(327, 395);
+        }
+        &__name {
+          font-weight: 700;
+        }
+        &__text {
+          max-width: 100%;
+          word-wrap: break-word;
         }
       }
     }
