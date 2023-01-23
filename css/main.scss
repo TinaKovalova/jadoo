@@ -331,8 +331,10 @@
       @include main-container();
       min-height: size-rem(734);
       padding-top: size-rem(121);
+      padding-bottom: size-rem(121);
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       row-gap: size-rem(8);
     }
     &__content {
@@ -342,7 +344,7 @@
       flex-direction: column;
       padding-left: size-percent(51, $max-width-Container);
       padding-right: size-percent(23, $max-width-Container);
-      min-width: 50%;
+      flex: 1 1 50%;
 
       &__subtitle {
         @extend %subtitle-text-style;
@@ -405,5 +407,209 @@
         }
       }
     }
+
+    .book__view {
+    }
+    .view {
+      flex: 1 1 50%;
+      $view-width:580;
+      min-width: $view-width;
+
+      &__wrapper {
+        width: size-rem(485);
+        height: size-rem(459);
+        position: relative;
+        top:size-rem(78);
+        left: size-percent(95,$view-width);
+       &::before{
+          content: '';
+          display: block;
+          width: size-rem(354);
+          height: size-rem(364);
+          position: absolute;
+          z-index: -7;
+          top: size-rem(0);
+          left: size-rem(60);
+          background: #59B1E6;
+          opacity: 0.4;
+          filter:blur(75px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+     
+
+        }
+      &::after{
+          content: '';
+          display: block;
+          width: size-rem(354);
+          height: size-rem(364);
+          position: absolute;
+          z-index: -10;
+          top: size-rem(0);
+          left: size-rem(60);
+          border-radius: 50%;
+          background: #59B1E6;
+          opacity: 0.8;
+          filter: blur(75px);
+        }
+        @include tablet(){
+          top:0;
+          left:0;       
+        }
+
+      }
+      .view__card {
+      }
+      .trip-card {
+
+        width:size-rem(370);
+        height: size-rem(400);
+        border-radius: size-rem(26);
+        background-color: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+        padding:size-rem(20) size-rem(24) size-rem(36);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include mobile(){
+        
+        
+        }
+        &__view{
+          min-height:50%;
+        }
+        &__img{
+          width: size-rem(321);
+          height:size-rem(161);
+          background: url("/images/booking/view.svg") no-repeat top/102%;
+          @include mobile(){
+           /* width:size-rem(311);
+            height:size-rem(156);*/
+                   
+          }
+        }
+        &__title {
+         font-size: size-rem(18);
+         line-height: size-rem(22);
+         letter-spacing: 0.015em;
+         margin-bottom: size-rem(13);
+         color: #080809;
+        }
+        &__duration{
+          padding-right:2px  ;
+          border-right: 1px solid $main-text-color;
+        }
+        &__duration, &__operator {
+          letter-spacing: -0.005em;
+          color: #84829A;
+        }
+        
+        &__activity {
+          
+        }
+        .activities {
+          margin: size-rem(21) 0 size-rem(30);
+        
+          &__item {          
+            display: inline-block;
+            width: size-rem(36);
+            height: size-rem(36);
+            border-radius: 50%;
+            &:nth-child(n+2){
+              margin-left:16px;
+            }
+          }
+          &__img {
+            width: size-rem(36);
+            height: size-rem(36);          
+          }      
+        }
+       
+        .trip-card__people-going {
+          .building-img {
+            width: size-rem(16);
+            height: size-rem(16);
+            margin-right: size-rem(15);
+          }
+        }
+        .trip-card__likes {
+          width: size-rem(20);
+          height: size-rem(20);
+          margin-right:size-rem(7);
+          letter-spacing: -0.02em;
+          float: right;
+         
+          .like-link {              
+          }
+        }
+      }
+      .view__ongoing {
+        
+      }
+      .ongoing {
+        width: size-rem(263);
+        height: size-rem(129);
+        padding: size-rem(16) size-rem(22);
+        background: #FFFFFF;
+        border-radius: size-rem(18);
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+        display: flex;
+        justify-content: space-between;
+        column-gap: size-rem(11);
+        font-size:size-rem(14);
+        line-height: size-rem(17);
+        position: absolute;
+        left: size-rem(222);
+        bottom: size-rem(52);
+        @include tablet(){
+          left: size-rem(175);
+          column-gap: size-rem(5);
+          width: size-rem(230);
+        }
+
+        &__img {
+          width: size-rem(50);
+          height: size-rem(50);
+          background: url('../images/booking/trip-icon.svg') no-repeat;
+        }
+        &__content{
+
+        }
+        .content-ongoing{
+          color: #8A79DF;
+          &__subtitle {
+            color: #84829A;
+            letter-spacing: -0.035em;
+          }
+          &__title {
+            color: #080809;
+            font-size: size-rem(18);
+            line-height: size-rem(22);
+            letter-spacing: -0.015em;
+            margin:size-rem(6) 0 size-rem(14);
+          }
+          &__complited {
+            letter-spacing: -0.055em;
+            .black-text{
+              color: #080809;
+            }
+          }
+          &__progress {
+            width: size-percent(156,263);
+            height: size-rem(5);
+            background: #F5F5F5;
+            border-radius:size-rem(30);
+            margin-top: size-rem(10);
+          }
+          &__scale{
+            width: 40%;
+            height: 100%;
+            background: #8A79DF;
+            border-radius:size-rem(30);
+          }
+        }
+        
+      
+      }
+    }
+    
   }
 }
