@@ -5,12 +5,12 @@
   font-weight: 500;
   font-style: normal;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
 
-.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: size-rem(50);
   line-height: size-rem(64);
   color: #14183E;
@@ -35,12 +35,12 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
 
-.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: size-rem(50);
   line-height: size-rem(64);
   color: #14183E;
@@ -700,11 +700,11 @@ template {
   /*>=480 Ipads, Tablets*/
   /*<=480 mobile*/
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -722,11 +722,11 @@ template {
   line-height: 1.6875rem;
   color: #5E6282;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -925,11 +925,11 @@ template {
 .page .wrapper .header__language-selection:hover {
   font-weight: 600;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -947,11 +947,11 @@ template {
   line-height: 1.6875rem;
   color: #5E6282;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
+.page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -1634,11 +1634,86 @@ template {
   background: #8A79DF;
   border-radius: 1.875rem;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
+.page .wrapper .main .testimonials__container {
+  width: 82.6388888889vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  min-height: 31.625rem;
+  padding-top: 4.9375rem;
+}
+.page .wrapper .main .testimonials__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 64.8125rem;
+          flex: 1 1 64.8125rem;
+  min-height: 17.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 7.75rem;
+     -moz-column-gap: 7.75rem;
+          column-gap: 7.75rem;
+  row-gap: 3.125rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.page .wrapper .main .testimonials__headings {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 31rem;
+          flex: 1 1 31rem;
+}
+.page .wrapper .main .testimonials__subtitle {
+  margin-top: 0.5625rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.page .wrapper .main .testimonials__title {
+  text-align: left !important;
+  margin-top: 0.5rem;
+}
+.page .wrapper .main .testimonials__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 31.5rem;
+          flex: 1 1 31.5rem;
+  max-width: 31.5rem;
+  padding: 1.75rem 4.25rem 2.125rem 2.125rem;
+  position: relative;
+  top: 2.125rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 0.625rem;
+}
+.page .wrapper .main .testimonials__avatar {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: -1.75rem;
+  left: -2.125rem;
+}
+.page .wrapper .main .testimonials__text {
+  line-height: 2rem;
+}
+.page .wrapper .main .testimonials__user-name {
+  margin-top: 2.125rem;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  display: block;
+}
+.page .wrapper .main .testimonials__user-place {
+  margin-top: 0.3125rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .testimonials__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
+.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .testimonials__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
@@ -1656,11 +1731,11 @@ template {
   line-height: 1.6875rem;
   color: #5E6282;
 }
-.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
+.page .wrapper .main .intro .content__title, .page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .testimonials__title {
   font-weight: 700;
   font-family: "Volkhov", serif;
 }
-.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title {
+.page .wrapper .main .services__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .testimonials__title {
   font-size: 3.125rem;
   line-height: 4rem;
   color: #14183E;
