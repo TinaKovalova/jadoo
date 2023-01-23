@@ -548,7 +548,7 @@
   z-index: -7;
   top: 0rem;
   left: 3.75rem;
-  background: #59B1E6;
+  background: #59b1e6;
   opacity: 0.4;
   -webkit-filter: blur(75px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: blur(75px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -563,7 +563,7 @@
   top: 0rem;
   left: 3.75rem;
   border-radius: 50%;
-  background: #59B1E6;
+  background: #59b1e6;
   opacity: 0.8;
   -webkit-filter: blur(75px);
           filter: blur(75px);
@@ -578,7 +578,7 @@
   width: 23.125rem;
   height: 25rem;
   border-radius: 1.625rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   padding: 1.25rem 1.5rem 2.25rem;
@@ -597,7 +597,7 @@
 @media (max-width: size-rem(479.98)) {
   .main .booking-steps .view .trip-card__img {
     /* width:size-rem(311);
-     height:size-rem(156);*/
+    height:size-rem(156);*/
   }
 }
 .main .booking-steps .view .trip-card__title {
@@ -613,7 +613,7 @@
 }
 .main .booking-steps .view .trip-card__duration, .main .booking-steps .view .trip-card__operator {
   letter-spacing: -0.005em;
-  color: #84829A;
+  color: #84829a;
 }
 .main .booking-steps .view .trip-card .activities {
   margin: 1.3125rem 0 1.875rem;
@@ -647,7 +647,7 @@
   width: 16.4375rem;
   height: 8.0625rem;
   padding: 1rem 1.375rem;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 1.125rem;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
@@ -681,10 +681,10 @@
   background: url("../images/booking/trip-icon.svg") no-repeat;
 }
 .main .booking-steps .view .ongoing .content-ongoing {
-  color: #8A79DF;
+  color: #8a79df;
 }
 .main .booking-steps .view .ongoing .content-ongoing__subtitle {
-  color: #84829A;
+  color: #84829a;
   letter-spacing: -0.035em;
 }
 .main .booking-steps .view .ongoing .content-ongoing__title {
@@ -703,14 +703,14 @@
 .main .booking-steps .view .ongoing .content-ongoing__progress {
   width: 59.3155893536%;
   height: 0.3125rem;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 1.875rem;
   margin-top: 0.625rem;
 }
 .main .booking-steps .view .ongoing .content-ongoing__scale {
   width: 40%;
   height: 100%;
-  background: #8A79DF;
+  background: #8a79df;
   border-radius: 1.875rem;
 }
 .main .testimonials__container {
@@ -762,7 +762,7 @@
   padding: 1.75rem 4.25rem 2.125rem 2.125rem;
   position: relative;
   top: 2.125rem;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 0.625rem;
