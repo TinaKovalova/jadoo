@@ -5,4 +5,159 @@
 /*>=992 Desktop, large screens*/
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
-/*<=480 mobile*//*# sourceMappingURL=footer.css.map */
+/*<=480 mobile*/
+.footer__container {
+  width: 82.6388888889vw;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-column-gap: 3.9375rem;
+     -moz-column-gap: 3.9375rem;
+          column-gap: 3.9375rem;
+  min-height: 26.25rem;
+}
+.footer__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7.0085470085%;
+  padding: 1.3125rem 3.1875rem;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.1875rem;
+  max-width: 12.9375rem;
+}
+.footer__logo .logo-footer {
+  font-size: 2.75rem;
+  line-height: 4.125rem;
+  color: #181E4B;
+}
+.footer__logo .description {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+.footer__container-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.3125rem;
+  min-width: 29.625rem;
+}
+.footer .footer-main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 100%;
+  gap: 4.7008547009%;
+}
+.footer .footer-main-menu__item {
+  min-width: 7.1875rem;
+}
+.footer .child-menu__title {
+  font-weight: 700;
+  font-size: 1.3125rem;
+  line-height: 1.625rem;
+  color: #080809;
+}
+.footer .child-menu__list {
+  margin-top: 2.125rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+.footer .child-menu__item {
+  margin-top: 0.75rem;
+}
+.footer__widgets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.625rem;
+  max-width: 13.375rem;
+  padding-top: 1.3125rem;
+}
+.footer .networking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5625rem;
+     -moz-column-gap: 1.5625rem;
+          column-gap: 1.5625rem;
+}
+.footer .networking__item {
+  width: 2.5625rem;
+  height: 2.5625rem;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
+}
+.footer .networking__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.footer .networking .facebook-link {
+  background: url("../images/footer/facebook.svg") no-repeat center, #FFFFFF;
+}
+.footer .networking .instagram-link {
+  background: url("../images/footer/instagram.svg") no-repeat center, conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 16.67%, #C68BF0 29.47%, #D164DA 42.71%, #C963E8 61.46%, #BFC2E8 71.88%, #FFC999 80.21%, #D0D8C9 87.5%, #BAD0F1 92.81%, #CED8CB 99.71%, rgba(255, 255, 255, 0) 360deg);
+}
+.footer .networking .twitter-link {
+  background: url("../images/footer/twitter.svg") no-repeat center, #FFFFFF;
+}
+.footer .apps__links {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.4375rem;
+     -moz-column-gap: 0.4375rem;
+          column-gap: 0.4375rem;
+}
+.footer .apps-text {
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.5%;
+}
+.footer .apps__item {
+  min-width: 6.6875rem;
+  height: 2.1875rem;
+}
+.footer .apps .google-play {
+  background: url("../images/footer/googlePlay.png") no-repeat center/100%;
+}
+.footer .apps .app-store {
+  background: url("../images/footer/appStore.png") no-repeat center/100%;
+}
+.footer-copirait {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  text-align: center;
+  width: 100%;
+}/*# sourceMappingURL=footer.css.map */
