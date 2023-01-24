@@ -57,13 +57,17 @@
       }
     }
     &__item {
+      &:hover {
+        transform: scale(1.2);
+        font-weight: 600;
+        .menu__link{
+          color: #DF6951;
+        }
+      }
     }
     &__link {
       color: $header-color;
-      &:hover {
-        font-weight: 500;
-        text-decoration: underline;
-      }
+      
     }
     @include laptop {
       order: 5;
@@ -83,6 +87,13 @@
     column-gap: size-vw(52, $max-width);
 
     &__item {
+      &:hover {
+        transform: scale(1.2);
+        font-weight: 600; 
+        .auth__link{
+          color: #DF6951;
+        }
+      }
     }
     &__item-btn {
       flex: 0 0 size-em(102, 17);
@@ -92,15 +103,13 @@
       text-align: center;
       line-height: size-em(40, 17);
       &:hover {
-        border: 3px solid $header-color;
+        border: 1.5px solid  #DF6951;
       }
     }
 
     &__link {
       color: $header-color;
-      &:hover {
-        font-weight: 600;
-      }
+      
     }
     @include laptop {
       flex: 1 1 auto;
@@ -118,7 +127,9 @@
     text-transform: uppercase;
     background: transparent;
     &:hover {
+      transform: scale(1.2);
       font-weight: 600;
+      color: #DF6951;     
     }
   }
 }

@@ -838,12 +838,16 @@ template {
     row-gap: 0.625rem;
   }
 }
+.page .wrapper .header .menu__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 600;
+}
+.page .wrapper .header .menu__item:hover .menu__link {
+  color: #DF6951;
+}
 .page .wrapper .header .menu__link {
   color: #212832;
-}
-.page .wrapper .header .menu__link:hover {
-  font-weight: 500;
-  text-decoration: underline;
 }
 @media (max-width: 61.99875rem) {
   .page .wrapper .header .menu {
@@ -877,6 +881,14 @@ template {
      -moz-column-gap: 3.6111111111vw;
           column-gap: 3.6111111111vw;
 }
+.page .wrapper .header .auth__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  font-weight: 600;
+}
+.page .wrapper .header .auth__item:hover .auth__link {
+  color: #DF6951;
+}
 .page .wrapper .header .auth__item-btn {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 6em;
@@ -888,13 +900,10 @@ template {
   line-height: 2.3529411765em;
 }
 .page .wrapper .header .auth__item-btn:hover {
-  border: 3px solid #212832;
+  border: 1.5px solid #DF6951;
 }
 .page .wrapper .header .auth__link {
   color: #212832;
-}
-.page .wrapper .header .auth__link:hover {
-  font-weight: 600;
 }
 @media (max-width: 61.99875rem) {
   .page .wrapper .header .auth {
@@ -923,7 +932,10 @@ template {
   background: transparent;
 }
 .page .wrapper .header__language-selection:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   font-weight: 600;
+  color: #DF6951;
 }
 .page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
@@ -991,6 +1003,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   background: url("../images/intro/traveller.svg") right no-repeat;
+  position: relative;
 }
 @media (max-width: 75rem) {
   .page .wrapper .main .intro__container {
@@ -1008,6 +1021,67 @@ template {
     padding-top: 3.125rem;
     min-height: auto;
   }
+}
+.page .wrapper .main .intro .plane {
+  width: 167px;
+  height: 154px;
+  position: absolute;
+}
+.page .wrapper .main .intro .plane_fixed {
+  top: 103px;
+  right: -20px;
+  z-index: -2;
+}
+@-webkit-keyframes fly {
+  from {
+    top: 50px;
+    right: 600px;
+  }
+  to {
+    top: -200px;
+    left: 2000px;
+  }
+}
+@keyframes fly {
+  from {
+    top: 50px;
+    right: 600px;
+  }
+  to {
+    top: -200px;
+    left: 2000px;
+  }
+}
+@-webkit-keyframes fly-back {
+  from {
+    top: 800px;
+    left: -500px;
+  }
+  to {
+    top: 50px;
+    right: 600px;
+  }
+}
+@keyframes fly-back {
+  from {
+    top: 800px;
+    left: -500px;
+  }
+  to {
+    top: 50px;
+    right: 600px;
+  }
+}
+.page .wrapper .main .intro .plane.plane_animated {
+  top: 50px;
+  left: 600px;
+  z-index: 10;
+}
+.page .wrapper .main .intro .plane.plane_animated:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation: fly 3s ease-in, fly-back 1.5s 3s 1 ease-in;
+          animation: fly 3s ease-in, fly-back 1.5s 3s 1 ease-in;
 }
 .page .wrapper .main .intro__content {
   max-width: 34.1875rem;

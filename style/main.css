@@ -70,6 +70,7 @@
       -ms-flex-align: center;
           align-items: center;
   background: url("../images/intro/traveller.svg") right no-repeat;
+  position: relative;
 }
 @media (max-width: 75rem) {
   .main .intro__container {
@@ -87,6 +88,67 @@
     padding-top: 3.125rem;
     min-height: auto;
   }
+}
+.main .intro .plane {
+  width: 167px;
+  height: 154px;
+  position: absolute;
+}
+.main .intro .plane_fixed {
+  top: 103px;
+  right: -20px;
+  z-index: -2;
+}
+@-webkit-keyframes fly {
+  from {
+    top: 50px;
+    right: 600px;
+  }
+  to {
+    top: -200px;
+    left: 2000px;
+  }
+}
+@keyframes fly {
+  from {
+    top: 50px;
+    right: 600px;
+  }
+  to {
+    top: -200px;
+    left: 2000px;
+  }
+}
+@-webkit-keyframes fly-back {
+  from {
+    top: 800px;
+    left: -500px;
+  }
+  to {
+    top: 50px;
+    right: 600px;
+  }
+}
+@keyframes fly-back {
+  from {
+    top: 800px;
+    left: -500px;
+  }
+  to {
+    top: 50px;
+    right: 600px;
+  }
+}
+.main .intro .plane.plane_animated {
+  top: 50px;
+  left: 600px;
+  z-index: 10;
+}
+.main .intro .plane.plane_animated:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation: fly 3s ease-in, fly-back 1.5s 3s 1 ease-in;
+          animation: fly 3s ease-in, fly-back 1.5s 3s 1 ease-in;
 }
 .main .intro__content {
   max-width: 34.1875rem;

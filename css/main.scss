@@ -14,6 +14,7 @@
       display: flex;
       align-items: center;
       background: url('../images/intro/traveller.svg') right no-repeat;
+      position: relative;
       @media (max-width: size-rem(1200)) {
         background: transparent;
         justify-content: center;
@@ -22,6 +23,50 @@
         align-items: stretch;
         padding-top: size-rem(50);
         min-height: auto;
+      }
+    }
+    .plane{
+      width: 167px;
+      height: 154px;
+      position: absolute;
+    
+    }
+    .plane_fixed{
+      top: 103px;
+      right: -20px;
+      z-index: -2;
+
+    }
+    @keyframes fly {
+      from{
+        top: 50px;
+        right: 600px;
+      }
+      to{
+        top: -200px;
+        left: 2000px;
+      }
+    }
+
+    @keyframes fly-back {
+      from{
+        top: 800px;
+        left: -500px;
+      }
+      to{
+        top: 50px;
+        right: 600px;
+      }
+    }
+
+    .plane.plane_animated{
+      top: 50px;
+      left: 600px;
+      z-index: 10;
+      &:hover {
+        animation-play-state: running;
+        animation:fly 3s ease-in, 
+        fly-back 1.5s 3s 1 ease-in;
       }
     }
     &__content {
