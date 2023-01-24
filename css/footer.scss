@@ -3,23 +3,29 @@
     &__container {
         @include main-container();
        display: flex;
+       flex-shrink: 1;
        flex-direction: column;
        justify-content: space-around;
-       column-gap:  size-rem(63);
-        min-height: size-rem(420) ;
+       min-height: size-rem(420) ;
      }
     &__wrapper {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: size-percent(82, $max-width-Container);
-        padding:size-rem(21) size-rem(51);
+        justify-content: space-between;
+        gap: size-rem(30);
+        padding:size-rem(21) size-percent(51, $max-width-Container);
+        @include tablet(){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__logo {
         display: flex;
         flex-direction: column;
         row-gap: size-rem(19);
+        flex: 1 1 size-rem(207);
         max-width:size-rem(207);
         .logo-footer {
             font-size: size-rem(44);
@@ -34,15 +40,15 @@
     &__container-menu {
         display: flex;
         padding-top: size-rem(21);
-        min-width:size-rem(474);
-      
+        min-width:size-rem(350);
     }
       
     .footer-main-menu {
+        flex: 1 1 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        min-width: 100%;
-        gap: size-percent(55, $max-width-Container);
+        gap: size-rem(15);
         &__item {
             min-width: size-rem(115);
         }
@@ -65,16 +71,14 @@
         }
     }
     &__widgets {
+        flex: 1 1 size-rem(214);
         display: flex;
         flex-direction: column;
         row-gap: size-rem(26);
         max-width:size-rem(214);
         padding-top: size-rem(21);
-
     }
     &__networking {
-        
-  
 
     }
     .networking {

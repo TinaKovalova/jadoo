@@ -872,6 +872,18 @@
   border-radius: 129px 20px 20px 20px;
   position: relative;
 }
+@media (max-width: size-rem(767.98)) {
+  .main .subscribe__wrapper {
+    padding-left: 4.6875rem;
+    padding-right: 4.6875rem;
+  }
+}
+@media (max-width: size-rem(479.98)) {
+  .main .subscribe__wrapper {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}
 .main .subscribe__wrapper:before {
   content: url(/images/subscribe/left-circle.svg);
   stroke: rgb(196, 196, 196);

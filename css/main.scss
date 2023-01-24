@@ -752,6 +752,14 @@
       min-height: size-rem(407);
       border-radius: 129px 20px 20px 20px;
       position: relative;
+      @include tablet(){
+        padding-left:size-rem(75);
+        padding-right:size-rem(75);
+    }
+    @include mobile(){
+      padding-left:size-rem(30);
+      padding-right:size-rem(30);
+  }
           
       &:before{
         content:url(/images/subscribe/left-circle.svg);
