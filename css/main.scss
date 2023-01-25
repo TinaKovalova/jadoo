@@ -15,6 +15,7 @@
       align-items: center;
       background: url('../images/intro/traveller.svg') right no-repeat;
       position: relative;
+      z-index: 2;
       @media (max-width: size-rem(1200)) {
         background: transparent;
         justify-content: center;
@@ -29,14 +30,14 @@
       width: 167px;
       height: 154px;
       position: absolute;
-    
+      z-index: 100;
     }
     .plane_fixed{
       top: 103px;
       right: -20px;
       z-index: -2;
-
     }
+    
     @keyframes fly {
       from{
         top: 50px;
@@ -69,6 +70,8 @@
         fly-back 1.5s 3s 1 ease-in;
       }
     }
+
+    
     &__content {
       max-width: size-rem(547);
     }
@@ -95,8 +98,7 @@
       &__text {
         max-width: size-rem(477);
       }
-      &__actions {
-      }
+
       .actions {
         margin-top: size-rem(34);
 
@@ -108,8 +110,7 @@
           align-items: center;
           max-width: size-rem(379);
         }
-        &__item {
-        }
+
         &__item-play {
           font-size: size-rem(17);
           line-height: size-rem(26);
@@ -198,8 +199,7 @@
       column-gap: size-rem(118);
       row-gap: size-rem(118);
     }
-    .categories__item {
-    }
+
     .category {
       display: flex;
       flex-direction: column;
@@ -290,19 +290,17 @@
       flex-wrap: wrap;
       gap: size-rem(35);
       justify-content: space-around;
-
-      &__item {
-      }
+      border-radius: size-rem(24);
       .destination {
         flex: 0 1 300px;
         width: size-rem(315);
         height: size-rem(457);
         border-radius: size-rem(24);
-        background: transparent;
-        z-index: 0;
+        overflow: hidden;
         position: relative;
         display: flex;
-        box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+        transition: all 0.4s;
+        filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
           drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
           drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
           drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
@@ -324,24 +322,22 @@
         }
 
         &__img {
-          min-width: 150%;
-          height: auto;
-          position: absolute;
-          object-position: -75px -1px;
-          object-fit: contain;
-          z-index: 1;
+          min-width: 100%;
+          object-fit: cover;
         }
         &__data {
           flex: 1 1 100%;
           height: size-percent(130, 457);
           padding: size-rem(27) size-rem(25) size-rem(20) size-rem(20);
-          border-radius: 0px 0px size-rem(24) size-rem(24);
           align-self: flex-end;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
           z-index: 10;
           background: #ffffff;
+          position: absolute;
+          left: 0;
+          bottom: 0;
         }
 
         &__name,
@@ -382,8 +378,7 @@
       align-items: center;
       row-gap: size-rem(8);
     }
-    &__content {
-    }
+
     .booking {
       display: flex;
       flex-direction: column;
@@ -399,8 +394,6 @@
         @extend %title-text-style;
         text-align: left !important;
         padding: size-rem(15) 0 size-rem(34);
-      }
-      &__steps {
       }
 
       .steps {
@@ -453,8 +446,6 @@
       }
     }
 
-    .book__view {
-    }
     .view {
       flex: 1 1 50%;
       $view-width: 580;
@@ -498,8 +489,7 @@
           left: 0;
         }
       }
-      .view__card {
-      }
+
       .trip-card {
         width: size-rem(370);
         height: size-rem(400);
@@ -519,24 +509,25 @@
         }
         &__view {
           min-height: 50%;
+          padding-bottom: size-rem(20);
         }
         &__img {
           width: size-rem(321);
           height: size-rem(161);
-          background: url('/images/booking/view.svg') no-repeat top/102%;
-          @include mobile() {
-            /* width:size-rem(311);
-            height:size-rem(156);*/
-          }
+          border-radius: size-rem(24);
+          border: 1px solid #000000;
+          background: url('/images/booking/view.png') no-repeat center/100%;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
         &__title {
           font-size: size-rem(18);
           line-height: size-rem(22);
           letter-spacing: 0.015em;
-          margin-bottom: size-rem(13);
+
           color: #080809;
         }
         &__duration {
+          margin-top: size-rem(13);
           padding-right: 2px;
           border-right: 1px solid $main-text-color;
         }
@@ -546,8 +537,6 @@
           color: #84829a;
         }
 
-        &__activity {
-        }
         .activities {
           margin: size-rem(21) 0 size-rem(30);
 
@@ -579,13 +568,9 @@
           margin-right: size-rem(7);
           letter-spacing: -0.02em;
           float: right;
-
-          .like-link {
-          }
         }
       }
-      .view__ongoing {
-      }
+
       .ongoing {
         width: size-rem(263);
         height: size-rem(129);
@@ -599,13 +584,11 @@
           0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
           0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
         display: flex;
-        justify-content: space-between;
-        column-gap: size-rem(11);
         font-size: size-rem(14);
         line-height: size-rem(17);
         position: absolute;
         left: size-rem(222);
-        bottom: size-rem(52);
+        bottom: size-rem(58);
         @include tablet() {
           left: size-rem(175);
           column-gap: size-rem(5);
@@ -613,12 +596,11 @@
         }
 
         &__img {
-          width: size-rem(50);
-          height: size-rem(50);
-          background: url('../images/booking/trip-icon.svg') no-repeat;
+          width: size-rem(74);
+          height: size-rem(66);
+          background: url('../images/booking/trip-icon.svg') 50% 0px no-repeat;
         }
-        &__content {
-        }
+
         .content-ongoing {
           color: #8a79df;
           &__subtitle {
@@ -665,14 +647,15 @@
     &__wrapper {
       flex: 1 1 size-rem(1037);
       min-height: size-rem(279);
+      padding: 0 size-rem(80) 0 size-rem(50);
       display: flex;
       justify-content: space-between;
-      column-gap: size-rem(124);
+      column-gap: size-rem(20);
       row-gap: size-rem(50);
       flex-wrap: wrap;
     }
     &__headings {
-      flex: 1 1 size-rem(496);
+      flex: 1 1 50%;
     }
     &__subtitle {
       margin-top: size-rem(9);
@@ -684,10 +667,11 @@
     &__title {
       @extend %title-text-style;
       text-align: left !important;
+      max-width: size-rem(409);
       margin-top: size-rem(8);
     }
     &__content {
-      flex: 1 1 size-rem(504);
+      flex: 1 1 50%;
       max-width: size-rem(504);
       padding: size-rem(28) size-rem(68) size-rem(34) size-rem(34);
       position: relative;
@@ -705,6 +689,7 @@
       width: 68px;
       height: 68px;
       position: absolute;
+      border-radius: 50%;
       top: size-rem(-28);
       left: size-rem(-34);
     }
@@ -747,8 +732,7 @@
         column-gap: normal;
       }
     }
-    .partner__item {
-    }
+
     .parter {
       width: 170px;
       height: 86px;
@@ -757,7 +741,7 @@
       justify-content: center;
       background: #ffffff;
       filter: grayscale(100%);
-
+      transition: all 0.5s;
       &__img {
         width: 100%;
         vertical-align: middle;
@@ -781,8 +765,8 @@
       padding-top: size-rem(100);
       padding-bottom: size-rem(100);
       position: relative;
-      &:after{
-        content:url(/images/subscribe/plus.svg);
+      &:after {
+        content: url(/images/subscribe/plus.svg);
         width: size-rem(153);
         height: size-rem(166);
         z-index: -1;
@@ -793,43 +777,43 @@
     }
     &__wrapper {
       padding: size-rem(78) size-rem(155);
-      background-color:rgba(223, 215, 249, 0.2);
+      background-color: rgba(223, 215, 249, 0.2);
       min-height: size-rem(407);
       border-radius: 129px 20px 20px 20px;
       position: relative;
-      @include tablet(){
-        padding-left:size-rem(75);
-        padding-right:size-rem(75);
-    }
-    @include mobile(){
-      padding-left:size-rem(30);
-      padding-right:size-rem(30);
-  }
-          
-      &:before{
-        content:url(/images/subscribe/left-circle.svg);
+      z-index: 10;
+      @include tablet() {
+        padding-left: size-rem(75);
+        padding-right: size-rem(75);
+      }
+      @include mobile() {
+        padding-left: size-rem(30);
+        padding-right: size-rem(30);
+      }
+
+      &:before {
+        content: url(/images/subscribe/left-circle.svg);
         stroke: rgb(196, 196, 196);
         width: size-rem(390);
         height: size-rem(398);
-        z-index: 1;
+        z-index: -10;
         position: absolute;
         bottom: size-rem(-120);
-        left:size-rem(20);
-        filter: grayscale(100%);
+        left: size-rem(20);
+        filter: grayscale(100%) opacity(0.2);
       }
 
-      &:after{
-        content:url(/images/subscribe/right-circle.svg);
+      &:after {
+        content: url(/images/subscribe/right-circle.svg);
         width: size-rem(385);
         height: size-rem(291);
         z-index: 1;
         position: absolute;
         top: 0;
         right: size-rem(-180);
-        filter: grayscale(100%);
+        filter: grayscale(100%) opacity(0.2);
       }
     }
-
 
     &__send-img {
       width: 70px;
@@ -841,27 +825,31 @@
       top: size-rem(-13);
       z-index: 5;
     }
-    &__content{
+    &__content {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      row-gap:size-rem(74) ;
+      row-gap: size-rem(74);
       height: 100%;
       position: relative;
-      z-index: 10;;    }
-    
+      z-index: 10;
+    }
+
     &__title {
       text-align: center;
       font-size: size-rem(33);
       font-weight: 600;
       line-height: size-rem(54);
       color: $main-text-color;
+      @include tablet() {
+        font-size: size-rem(24);
+        llh: 1.63;
+      }
     }
-    &__form {
-    }
+
     .form {
-      $form-width:630;
+      $form-width: 630;
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -870,41 +858,52 @@
       align-self: center;
       max-width: size-rem($form-width);
       gap: size-rem(10);
-
-      &__email {
+      &__email-block {
+        position: relative;
         flex: 1 1 size-rem(421);
         min-width: size-percent(421, $form-width);
-        padding: size-em(26)  size-em(26) size-em(26) size-em(66) ;
+      }
+      .email-icon {
+        width: 21px;
+        height: 18px;
+        position: absolute;
+        top: size-em(18);
+        left: size-em(31);
+        z-index: 10;
+      }
+
+      &__email {
+        flex: 1 0 100%;
+        min-width: 100%;
+        padding: size-em(29) size-em(26) size-em(29) size-em(66);
+        background-clip: border-box;
         vertical-align: middle;
-        background: #FFFFFF url('../images/subscribe/email.png') no-repeat;
-        background-position: size-rem(31) center;
         border-radius: size-rem(10);
+        background-color: #ffffff;
         font-weight: 400;
         font-size: size-rem(14);
-        line-height: size-rem(17);  
-        color: #39425D;
+        line-height: size-rem(17);
+        color: #39425d;
         border: none;
+        position: relative;
+        &:required:hover {
+          box-shadow: rgba(255, 125, 104, 1) 0px 1px 4px;
+        }
       }
       &__btn {
         flex: 1 1 size-rem(180);
         min-width: size-percent(180, $form-width);
         height: size-rem(68);
-        background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+        background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
         border-radius: 10px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-family: 'Open Sans', sans-serif;
         text-align: center;
         align-items: center;
         font-size: size-rem(17);
         line-height: size-rem(23);
         font-weight: 600;
-
       }
     }
-
   }
-  
-  
-  
-  
 }

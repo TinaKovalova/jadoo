@@ -65,27 +65,6 @@
 /*>=768 Small screens, laptop*/
 /*>=480 Ipads, Tablets*/
 /*<=480 mobile*/
-/**
- * Reset Mixing
- * ================================================== */
-/**
- * Disable Animation
- */
-/**
- * Disable animation depends on Browser or Operation System configuration
- */
-/**
- * Accessability. Black and White Mode
- */
-/**
- * Accessability. Inverse Mode
- */
-/**
- * Meter reset
- */
-/**
- * Modern CSS Reset Tweaks
- * ================================================== */
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -124,20 +103,10 @@ a {
   text-decoration: none;
 }
 
-/**
- * CSS Reset Tweaks
- *
- * http://meyerweb.com/eric/tools/css/reset/
- * v2.0-modified | 20110126
- * License: none (public domain)
- */
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
@@ -145,71 +114,17 @@ h4,
 h5,
 h6,
 p,
-blockquote,
-pre,
 a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
 img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
 ul,
 li,
-fieldset,
 form,
 label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
 footer,
 header,
-hgroup,
 menu,
 nav,
-output,
-ruby,
 section,
-summary,
-time,
-mark,
 audio,
 video {
   font-size: 100%;
@@ -227,34 +142,16 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 main,
-article,
-aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
 menu,
 nav,
 section {
   display: block;
 }
 
-ol,
 ul {
   list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
 }
 
 /**
@@ -273,48 +170,8 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-input[type=search] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
 input:focus {
   outline: none;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
- */
-audio,
-canvas,
-video {
-  display: inline-block;
-  max-width: 100%;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
 }
 
 /**
@@ -338,11 +195,6 @@ img {
   display: inline-block;
   vertical-align: middle;
   height: auto;
-}
-
-/* Make pictures easier to work with */
-picture {
-  display: inline-block;
 }
 
 /**
@@ -388,34 +240,6 @@ html input[disabled] {
 }
 
 /**
- * 1. Address box sizing set to content-box in IE 8/9.
- */
-input[type=checkbox],
-input[type=radio] {
-  padding: 0;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type=search] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
  * Remove inner padding and border in Firefox 3+.
  */
 button::-moz-focus-inner,
@@ -427,47 +251,6 @@ input::-moz-focus-inner {
 button {
   border: 0;
   background: transparent;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  text-indent: 0;
-}
-
-/**
- * Based on normalize.css v8.0.1
- * github.com/necolas/normalize.css
- */
-hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  overflow: visible;
-  background: #000;
-  border: 0;
-  height: 1px;
-  line-height: 0;
-  margin: 0;
-  padding: 0;
-  page-break-after: always;
-  width: 100%;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  font-size: 100%;
 }
 
 /**
@@ -484,40 +267,6 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: none;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-}
-
-/**
-  * Add the correct font size in all browsers.
-  */
-small {
-  font-size: 75%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -5px;
-}
-
-sup {
-  top: -5px;
 }
 
 /**
@@ -578,90 +327,24 @@ button::-moz-focus-inner,
   outline: 0;
 }
 
-legend {
-  color: inherit;
-  white-space: normal;
-  display: block;
-  border: 0;
-  max-width: 100%;
-  width: 100%;
-}
-
-fieldset {
-  min-width: 0;
-}
-
 body:not(:-moz-handler-blocked) fieldset {
   display: block;
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/*
- * Misc
- * ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
 }
 
 .page {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.25em;
+}
+.page .btn {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.page .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .page .wrapper {
   min-height: 100vh;
@@ -838,13 +521,17 @@ template {
     row-gap: 0.625rem;
   }
 }
+.page .wrapper .header .menu__item {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .page .wrapper .header .menu__item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 600;
 }
 .page .wrapper .header .menu__item:hover .menu__link {
-  color: #DF6951;
+  color: #df6951;
 }
 .page .wrapper .header .menu__link {
   color: #212832;
@@ -881,13 +568,17 @@ template {
      -moz-column-gap: 3.6111111111vw;
           column-gap: 3.6111111111vw;
 }
+.page .wrapper .header .auth__item {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .page .wrapper .header .auth__item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 600;
 }
 .page .wrapper .header .auth__item:hover .auth__link {
-  color: #DF6951;
+  color: #df6951;
 }
 .page .wrapper .header .auth__item-btn {
   -webkit-box-flex: 0;
@@ -898,9 +589,11 @@ template {
   border: 1px solid #212832;
   text-align: center;
   line-height: 2.3529411765em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .page .wrapper .header .auth__item-btn:hover {
-  border: 1.5px solid #DF6951;
+  border: none;
 }
 .page .wrapper .header .auth__link {
   color: #212832;
@@ -930,12 +623,14 @@ template {
   text-align: right;
   text-transform: uppercase;
   background: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .page .wrapper .header__language-selection:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   font-weight: 600;
-  color: #DF6951;
+  color: #df6951;
 }
 .page .wrapper .main .intro .content__title, .page .wrapper .main .testimonials__title, .page .wrapper .main .booking-steps .booking__title, .page .wrapper .main .top-selling__title, .page .wrapper .main .services__title {
   font-weight: 700;
@@ -1004,6 +699,7 @@ template {
           align-items: center;
   background: url("../images/intro/traveller.svg") right no-repeat;
   position: relative;
+  z-index: 2;
 }
 @media (max-width: 75rem) {
   .page .wrapper .main .intro__container {
@@ -1026,6 +722,7 @@ template {
   width: 167px;
   height: 154px;
   position: absolute;
+  z-index: 100;
 }
 .page .wrapper .main .intro .plane_fixed {
   top: 103px;
@@ -1328,6 +1025,7 @@ template {
   gap: 2.1875rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 1.5rem;
 }
 .page .wrapper .main .top-selling .destinations .destination {
   -webkit-box-flex: 0;
@@ -1336,14 +1034,15 @@ template {
   width: 19.6875rem;
   height: 28.5625rem;
   border-radius: 1.5rem;
-  background: transparent;
-  z-index: 0;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
-          box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
 }
 .page .wrapper .main .top-selling .destinations .destination:hover {
   -webkit-transform: scale(1.03);
@@ -1361,14 +1060,9 @@ template {
   height: 15.875rem;
 }
 .page .wrapper .main .top-selling .destinations .destination__img {
-  min-width: 150%;
-  height: auto;
-  position: absolute;
-  -o-object-position: -75px -1px;
-     object-position: -75px -1px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  z-index: 1;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page .wrapper .main .top-selling .destinations .destination__data {
   -webkit-box-flex: 1;
@@ -1376,7 +1070,6 @@ template {
           flex: 1 1 100%;
   height: 28.4463894967%;
   padding: 1.6875rem 1.5625rem 1.25rem 1.25rem;
-  border-radius: 0px 0px 1.5rem 1.5rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -1389,6 +1082,9 @@ template {
           justify-content: space-between;
   z-index: 10;
   background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .page .wrapper .main .top-selling .destinations .destination__name, .page .wrapper .main .top-selling .destinations .destination__price {
   font-size: 1.125rem;
@@ -1583,26 +1279,25 @@ template {
 }
 .page .wrapper .main .booking-steps .view .trip-card__view {
   min-height: 50%;
+  padding-bottom: 1.25rem;
 }
 .page .wrapper .main .booking-steps .view .trip-card__img {
   width: 20.0625rem;
   height: 10.0625rem;
-  background: url("/images/booking/view.svg") no-repeat top/102%;
-}
-@media (max-width: 29.99875rem) {
-  .page .wrapper .main .booking-steps .view .trip-card__img {
-    /* width:size-rem(311);
-    height:size-rem(156);*/
-  }
+  border-radius: 1.5rem;
+  border: 1px solid #000000;
+  background: url("/images/booking/view.png") no-repeat center/100%;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .page .wrapper .main .booking-steps .view .trip-card__title {
   font-size: 1.125rem;
   line-height: 1.375rem;
   letter-spacing: 0.015em;
-  margin-bottom: 0.8125rem;
   color: #080809;
 }
 .page .wrapper .main .booking-steps .view .trip-card__duration {
+  margin-top: 0.8125rem;
   padding-right: 2px;
   border-right: 1px solid #5E6282;
 }
@@ -1649,17 +1344,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 0.6875rem;
-     -moz-column-gap: 0.6875rem;
-          column-gap: 0.6875rem;
   font-size: 0.875rem;
   line-height: 1.0625rem;
   position: absolute;
   left: 13.875rem;
-  bottom: 3.25rem;
+  bottom: 3.625rem;
 }
 @media (max-width: 47.99875rem) {
   .page .wrapper .main .booking-steps .view .ongoing {
@@ -1671,9 +1360,9 @@ template {
   }
 }
 .page .wrapper .main .booking-steps .view .ongoing__img {
-  width: 3.125rem;
-  height: 3.125rem;
-  background: url("../images/booking/trip-icon.svg") no-repeat;
+  width: 4.625rem;
+  height: 4.125rem;
+  background: url("../images/booking/trip-icon.svg") 50% 0px no-repeat;
 }
 .page .wrapper .main .booking-steps .view .ongoing .content-ongoing {
   color: #8a79df;
@@ -1721,23 +1410,24 @@ template {
       -ms-flex: 1 1 64.8125rem;
           flex: 1 1 64.8125rem;
   min-height: 17.4375rem;
+  padding: 0 5rem 0 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 7.75rem;
-     -moz-column-gap: 7.75rem;
-          column-gap: 7.75rem;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   row-gap: 3.125rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .page .wrapper .main .testimonials__headings {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 31rem;
-          flex: 1 1 31rem;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 .page .wrapper .main .testimonials__subtitle {
   margin-top: 0.5625rem;
@@ -1748,12 +1438,13 @@ template {
 }
 .page .wrapper .main .testimonials__title {
   text-align: left !important;
+  max-width: 25.5625rem;
   margin-top: 0.5rem;
 }
 .page .wrapper .main .testimonials__content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 31.5rem;
-          flex: 1 1 31.5rem;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   max-width: 31.5rem;
   padding: 1.75rem 4.25rem 2.125rem 2.125rem;
   position: relative;
@@ -1767,6 +1458,7 @@ template {
   width: 68px;
   height: 68px;
   position: absolute;
+  border-radius: 50%;
   top: -1.75rem;
   left: -2.125rem;
 }
@@ -1830,6 +1522,8 @@ template {
   background: #ffffff;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .page .wrapper .main .parters .parter__img {
   width: 100%;
@@ -1866,6 +1560,7 @@ template {
   min-height: 25.4375rem;
   border-radius: 129px 20px 20px 20px;
   position: relative;
+  z-index: 10;
 }
 @media (max-width: 47.99875rem) {
   .page .wrapper .main .subscribe__wrapper {
@@ -1884,12 +1579,12 @@ template {
   stroke: rgb(196, 196, 196);
   width: 24.375rem;
   height: 24.875rem;
-  z-index: 1;
+  z-index: -10;
   position: absolute;
   bottom: -7.5rem;
   left: 1.25rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) opacity(0.2);
+          filter: grayscale(100%) opacity(0.2);
 }
 .page .wrapper .main .subscribe__wrapper:after {
   content: url(/images/subscribe/right-circle.svg);
@@ -1899,8 +1594,8 @@ template {
   position: absolute;
   top: 0;
   right: -11.25rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) opacity(0.2);
+          filter: grayscale(100%) opacity(0.2);
 }
 .page .wrapper .main .subscribe__send-img {
   width: 70px;
@@ -1938,6 +1633,12 @@ template {
   line-height: 3.375rem;
   color: #5E6282;
 }
+@media (max-width: 47.99875rem) {
+  .page .wrapper .main .subscribe__title {
+    font-size: 1.5rem;
+    llh: 1.63;
+  }
+}
 .page .wrapper .main .subscribe .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1956,21 +1657,41 @@ template {
   max-width: 39.375rem;
   gap: 0.625rem;
 }
-.page .wrapper .main .subscribe .form__email {
+.page .wrapper .main .subscribe .form__email-block {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 26.3125rem;
           flex: 1 1 26.3125rem;
   min-width: 66.8253968254%;
-  padding: 1.625em 1.625em 1.625em 4.125em;
+}
+.page .wrapper .main .subscribe .form .email-icon {
+  width: 21px;
+  height: 18px;
+  position: absolute;
+  top: 1.125em;
+  left: 1.9375em;
+  z-index: 10;
+}
+.page .wrapper .main .subscribe .form__email {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  min-width: 100%;
+  padding: 1.8125em 1.625em 1.8125em 4.125em;
+  background-clip: border-box;
   vertical-align: middle;
-  background: #FFFFFF url("../images/subscribe/email.png") no-repeat;
-  background-position: 1.9375rem center;
   border-radius: 0.625rem;
+  background-color: #ffffff;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.0625rem;
-  color: #39425D;
+  color: #39425d;
   border: none;
+  position: relative;
+}
+.page .wrapper .main .subscribe .form__email:required:hover {
+  -webkit-box-shadow: rgb(255, 125, 104) 0px 1px 4px;
+          box-shadow: rgb(255, 125, 104) 0px 1px 4px;
 }
 .page .wrapper .main .subscribe .form__btn {
   -webkit-box-flex: 1;
@@ -1978,10 +1699,10 @@ template {
           flex: 1 1 11.25rem;
   min-width: 28.5714285714%;
   height: 4.25rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF946D), to(#FF7D68));
-  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff946d), to(#ff7d68));
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   -webkit-box-align: center;
@@ -2139,6 +1860,19 @@ template {
 }
 .page .wrapper .footer .child-menu__item {
   margin-top: 0.75rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.page .wrapper .footer .child-menu__item > .menu__link {
+  color: #5E6282;
+}
+.page .wrapper .footer .child-menu__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #181E4B;
+  font-weight: 600;
 }
 .page .wrapper .footer__widgets {
   -webkit-box-flex: 1;
@@ -2169,6 +1903,10 @@ template {
   border-radius: 50%;
   -webkit-filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .page .wrapper .footer .networking__item:hover {
   -webkit-transform: scale(1.2);
@@ -2200,12 +1938,20 @@ template {
 .page .wrapper .footer .apps__item {
   min-width: 6.6875rem;
   height: 2.1875rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.page .wrapper .footer .apps__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .page .wrapper .footer .apps .google-play {
-  background: url("../images/footer/googlePlay.png") no-repeat center/100%;
+  background: url("../images/footer/googlePlay.png") no-repeat center/contain;
 }
 .page .wrapper .footer .apps .app-store {
-  background: url("../images/footer/appStore.png") no-repeat center/100%;
+  background: url("../images/footer/appStore.png") no-repeat center/contain;
 }
 .page .wrapper .footer-copirait {
   font-size: 0.875rem;
@@ -2219,4 +1965,5 @@ template {
   position: absolute;
   top: 0;
   right: 0px;
+  z-index: 0;
 }/*# sourceMappingURL=style.css.map */

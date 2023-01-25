@@ -71,6 +71,7 @@
           align-items: center;
   background: url("../images/intro/traveller.svg") right no-repeat;
   position: relative;
+  z-index: 2;
 }
 @media (max-width: 75rem) {
   .main .intro__container {
@@ -93,6 +94,7 @@
   width: 167px;
   height: 154px;
   position: absolute;
+  z-index: 100;
 }
 .main .intro .plane_fixed {
   top: 103px;
@@ -395,6 +397,7 @@
   gap: 2.1875rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 1.5rem;
 }
 .main .top-selling .destinations .destination {
   -webkit-box-flex: 0;
@@ -403,14 +406,15 @@
   width: 19.6875rem;
   height: 28.5625rem;
   border-radius: 1.5rem;
-  background: transparent;
-  z-index: 0;
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
-          box-shadow: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
 }
 .main .top-selling .destinations .destination:hover {
   -webkit-transform: scale(1.03);
@@ -428,14 +432,9 @@
   height: 15.875rem;
 }
 .main .top-selling .destinations .destination__img {
-  min-width: 150%;
-  height: auto;
-  position: absolute;
-  -o-object-position: -75px -1px;
-     object-position: -75px -1px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  z-index: 1;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .top-selling .destinations .destination__data {
   -webkit-box-flex: 1;
@@ -443,7 +442,6 @@
           flex: 1 1 100%;
   height: 28.4463894967%;
   padding: 1.6875rem 1.5625rem 1.25rem 1.25rem;
-  border-radius: 0px 0px 1.5rem 1.5rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -456,6 +454,9 @@
           justify-content: space-between;
   z-index: 10;
   background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .main .top-selling .destinations .destination__name, .main .top-selling .destinations .destination__price {
   font-size: 1.125rem;
@@ -650,26 +651,25 @@
 }
 .main .booking-steps .view .trip-card__view {
   min-height: 50%;
+  padding-bottom: 1.25rem;
 }
 .main .booking-steps .view .trip-card__img {
   width: 20.0625rem;
   height: 10.0625rem;
-  background: url("/images/booking/view.svg") no-repeat top/102%;
-}
-@media (max-width: size-rem(479.98)) {
-  .main .booking-steps .view .trip-card__img {
-    /* width:size-rem(311);
-    height:size-rem(156);*/
-  }
+  border-radius: 1.5rem;
+  border: 1px solid #000000;
+  background: url("/images/booking/view.png") no-repeat center/100%;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .main .booking-steps .view .trip-card__title {
   font-size: 1.125rem;
   line-height: 1.375rem;
   letter-spacing: 0.015em;
-  margin-bottom: 0.8125rem;
   color: #080809;
 }
 .main .booking-steps .view .trip-card__duration {
+  margin-top: 0.8125rem;
   padding-right: 2px;
   border-right: 1px solid #5E6282;
 }
@@ -716,17 +716,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 0.6875rem;
-     -moz-column-gap: 0.6875rem;
-          column-gap: 0.6875rem;
   font-size: 0.875rem;
   line-height: 1.0625rem;
   position: absolute;
   left: 13.875rem;
-  bottom: 3.25rem;
+  bottom: 3.625rem;
 }
 @media (max-width: size-rem(767.98)) {
   .main .booking-steps .view .ongoing {
@@ -738,9 +732,9 @@
   }
 }
 .main .booking-steps .view .ongoing__img {
-  width: 3.125rem;
-  height: 3.125rem;
-  background: url("../images/booking/trip-icon.svg") no-repeat;
+  width: 4.625rem;
+  height: 4.125rem;
+  background: url("../images/booking/trip-icon.svg") 50% 0px no-repeat;
 }
 .main .booking-steps .view .ongoing .content-ongoing {
   color: #8a79df;
@@ -788,23 +782,24 @@
       -ms-flex: 1 1 64.8125rem;
           flex: 1 1 64.8125rem;
   min-height: 17.4375rem;
+  padding: 0 5rem 0 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-column-gap: 7.75rem;
-     -moz-column-gap: 7.75rem;
-          column-gap: 7.75rem;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
   row-gap: 3.125rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .main .testimonials__headings {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 31rem;
-          flex: 1 1 31rem;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 .main .testimonials__subtitle {
   margin-top: 0.5625rem;
@@ -815,12 +810,13 @@
 }
 .main .testimonials__title {
   text-align: left !important;
+  max-width: 25.5625rem;
   margin-top: 0.5rem;
 }
 .main .testimonials__content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 31.5rem;
-          flex: 1 1 31.5rem;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   max-width: 31.5rem;
   padding: 1.75rem 4.25rem 2.125rem 2.125rem;
   position: relative;
@@ -834,6 +830,7 @@
   width: 68px;
   height: 68px;
   position: absolute;
+  border-radius: 50%;
   top: -1.75rem;
   left: -2.125rem;
 }
@@ -897,6 +894,8 @@
   background: #ffffff;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .main .parters .parter__img {
   width: 100%;
@@ -933,6 +932,7 @@
   min-height: 25.4375rem;
   border-radius: 129px 20px 20px 20px;
   position: relative;
+  z-index: 10;
 }
 @media (max-width: size-rem(767.98)) {
   .main .subscribe__wrapper {
@@ -951,12 +951,12 @@
   stroke: rgb(196, 196, 196);
   width: 24.375rem;
   height: 24.875rem;
-  z-index: 1;
+  z-index: -10;
   position: absolute;
   bottom: -7.5rem;
   left: 1.25rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) opacity(0.2);
+          filter: grayscale(100%) opacity(0.2);
 }
 .main .subscribe__wrapper:after {
   content: url(/images/subscribe/right-circle.svg);
@@ -966,8 +966,8 @@
   position: absolute;
   top: 0;
   right: -11.25rem;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) opacity(0.2);
+          filter: grayscale(100%) opacity(0.2);
 }
 .main .subscribe__send-img {
   width: 70px;
@@ -1005,6 +1005,12 @@
   line-height: 3.375rem;
   color: #5E6282;
 }
+@media (max-width: size-rem(767.98)) {
+  .main .subscribe__title {
+    font-size: 1.5rem;
+    llh: 1.63;
+  }
+}
 .main .subscribe .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,21 +1029,41 @@
   max-width: 39.375rem;
   gap: 0.625rem;
 }
-.main .subscribe .form__email {
+.main .subscribe .form__email-block {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 26.3125rem;
           flex: 1 1 26.3125rem;
   min-width: 66.8253968254%;
-  padding: 1.625em 1.625em 1.625em 4.125em;
+}
+.main .subscribe .form .email-icon {
+  width: 21px;
+  height: 18px;
+  position: absolute;
+  top: 1.125em;
+  left: 1.9375em;
+  z-index: 10;
+}
+.main .subscribe .form__email {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  min-width: 100%;
+  padding: 1.8125em 1.625em 1.8125em 4.125em;
+  background-clip: border-box;
   vertical-align: middle;
-  background: #FFFFFF url("../images/subscribe/email.png") no-repeat;
-  background-position: 1.9375rem center;
   border-radius: 0.625rem;
+  background-color: #ffffff;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.0625rem;
-  color: #39425D;
+  color: #39425d;
   border: none;
+  position: relative;
+}
+.main .subscribe .form__email:required:hover {
+  -webkit-box-shadow: rgb(255, 125, 104) 0px 1px 4px;
+          box-shadow: rgb(255, 125, 104) 0px 1px 4px;
 }
 .main .subscribe .form__btn {
   -webkit-box-flex: 1;
@@ -1045,10 +1071,10 @@
           flex: 1 1 11.25rem;
   min-width: 28.5714285714%;
   height: 4.25rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF946D), to(#FF7D68));
-  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff946d), to(#ff7d68));
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   -webkit-box-align: center;

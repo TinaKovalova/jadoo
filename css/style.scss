@@ -6,6 +6,12 @@
   font-weight: 500;
   font-size: 1rem;
   line-height: size-em(20);
+  .btn {
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
   .wrapper {
     min-height: 100vh;
     overflow: hidden;
@@ -15,14 +21,12 @@
     z-index: 10;
     @import 'header', 'main', 'footer';
   }
-  &::before{
+  &::before {
     content: url('../images/intro/decore.svg');
     display: block;
     position: absolute;
     top: 0;
     right: 0px;
-
-   
- 
+    z-index: 0;
   }
 }
