@@ -102,41 +102,37 @@
   z-index: -2;
 }
 @-webkit-keyframes fly {
-  from {
+  0% {
     top: 50px;
     right: 600px;
   }
-  to {
-    top: -200px;
-    left: 2000px;
+  50% {
+    -webkit-transform: translate(2000px, -400px);
+            transform: translate(2000px, -400px);
+  }
+  75% {
+    -webkit-transform: translate(-2000px, -400px);
+            transform: translate(-2000px, -400px);
+  }
+  100% {
+    top: 50px;
+    right: 600px;
   }
 }
 @keyframes fly {
-  from {
+  0% {
     top: 50px;
     right: 600px;
   }
-  to {
-    top: -200px;
-    left: 2000px;
+  50% {
+    -webkit-transform: translate(2000px, -400px);
+            transform: translate(2000px, -400px);
   }
-}
-@-webkit-keyframes fly-back {
-  from {
-    top: 800px;
-    left: -500px;
+  75% {
+    -webkit-transform: translate(-2000px, -400px);
+            transform: translate(-2000px, -400px);
   }
-  to {
-    top: 50px;
-    right: 600px;
-  }
-}
-@keyframes fly-back {
-  from {
-    top: 800px;
-    left: -500px;
-  }
-  to {
+  100% {
     top: 50px;
     right: 600px;
   }
@@ -147,10 +143,8 @@
   z-index: 10;
 }
 .main .intro .plane.plane_animated:hover {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation: fly 3s ease-in, fly-back 1.5s 3s 1 ease-in;
-          animation: fly 3s ease-in, fly-back 1.5s 3s 1 ease-in;
+  -webkit-animation: fly 3s ease-in-out 1;
+          animation: fly 3s ease-in-out 1;
 }
 .main .intro__content {
   max-width: 34.1875rem;
