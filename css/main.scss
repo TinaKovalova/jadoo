@@ -1,4 +1,4 @@
-@import '_variables', '_functions';
+@import "_variables", "_functions";
 .main {
   width: 100%;
   flex: 1 1 auto;
@@ -13,7 +13,7 @@
       min-height: size-rem(757);
       display: flex;
       align-items: center;
-      background: url('../images/intro/traveller.svg') right no-repeat;
+      background: url("../images/intro/traveller.svg") right no-repeat;
       position: relative;
       z-index: 2;
       @media (max-width: size-rem(1200)) {
@@ -26,43 +26,43 @@
         min-height: auto;
       }
     }
-    .plane{
+    .plane {
       width: 167px;
       height: 154px;
       position: absolute;
       z-index: 100;
     }
-    .plane_fixed{
+    .plane_fixed {
       top: 103px;
       right: -20px;
       z-index: -2;
     }
-    
+
     @keyframes fly {
-      0%{
+      0% {
         top: 50px;
         right: 600px;
       }
-      50%{
-        transform: translate(2000px,-400px);
+      50% {
+        transform: translate(2000px, -400px);
       }
-      75%{
-        transform: translate(-2000px,-400px);       
-      }   
-      100%{
+      75% {
+        transform: translate(-2000px, -400px);
+      }
+      100% {
         top: 50px;
         right: 600px;
       }
     }
-    .plane.plane_animated{
+    .plane.plane_animated {
       top: 50px;
       left: 600px;
       z-index: 10;
       &:hover {
-        animation:fly 3s ease-in-out 1;
+        animation: fly 3s ease-in-out 1;
       }
     }
-    
+
     &__content {
       max-width: size-rem(547);
     }
@@ -111,18 +111,18 @@
           }
         }
         &__item-play::before {
-          content: '';
+          content: "";
           display: inline-block;
           width: size-rem(52);
           height: size-rem(52);
           border-radius: 50%;
           vertical-align: middle;
           margin-right: size-rem(21);
-          background: url('../images/intro/play_button.svg') center;
+          background: url("../images/intro/play_button.svg") center;
           background-position-y: -15px;
         }
         &__item-orange-btn {
-          font: 500 size-rem(18) 'Google Sans', sans-serif;
+          font: 500 size-rem(18) "Google Sans", sans-serif;
           line-height: size-rem(23);
           min-width: size-rem(170);
           padding: size-rem(18) size-rem(26);
@@ -166,7 +166,7 @@
       row-gap: size-rem(10);
       position: relative;
       &::after {
-        content: url('../images/services/plus-decor.svg');
+        content: url("../images/services/plus-decor.svg");
         position: absolute;
         top: size-rem(80);
         right: size-rem(-76.5);
@@ -218,7 +218,7 @@
       }
 
       &__title {
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 600;
         line-height: size-rem(27);
         text-align: center;
@@ -232,14 +232,14 @@
       }
       &:hover {
         &::after {
-          content: url('../images/services/rectangle-decor.svg');
+          content: url("../images/services/rectangle-decor.svg");
           position: absolute;
           bottom: size-rem(-76);
           left: size-rem(-76);
           z-index: -3;
         }
         &::before {
-          content: '';
+          content: "";
           display: block;
           width: size-rem(267);
           min-height: size-rem(314);
@@ -303,7 +303,7 @@
             rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         }
         &:last-child:after {
-          content: url('../images/top-selling/spring-decore.svg');
+          content: url("../images/top-selling/spring-decore.svg");
           position: absolute;
           right: size-rem(-62);
           top: size-rem(154);
@@ -344,7 +344,7 @@
           flex: 1 1 100%;
           color: $main-text-color;
           &::before {
-            content: url('../images/top-selling/navigation.svg');
+            content: url("../images/top-selling/navigation.svg");
             width: size-rem(20);
             height: size-rem(20);
             position: absolute;
@@ -412,13 +412,13 @@
           background-position: center;
         }
         .destination-img {
-          background-image: url('../images/booking/destination-icon.svg');
+          background-image: url("../images/booking/destination-icon.svg");
         }
         .payment-img {
-          background-image: url('../images/booking/payment-icon.svg');
+          background-image: url("../images/booking/payment-icon.svg");
         }
         .transfer-img {
-          background-image: url('../images/booking/transfer-icon.svg');
+          background-image: url("../images/booking/transfer-icon.svg");
         }
 
         &__content {
@@ -449,7 +449,7 @@
         top: size-rem(78);
         left: size-percent(95, $view-width);
         &::before {
-          content: '';
+          content: "";
           display: block;
           width: size-rem(354);
           height: size-rem(364);
@@ -462,7 +462,7 @@
           filter: blur(75px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
         &::after {
-          content: '';
+          content: "";
           display: block;
           width: size-rem(354);
           height: size-rem(364);
@@ -507,7 +507,7 @@
           height: size-rem(161);
           border-radius: size-rem(24);
           border: 1px solid #000000;
-          background: url('/images/booking/view.png') no-repeat center/100%;
+          background: url("../images/booking/view.png") no-repeat center/100%;
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
         &__title {
@@ -589,7 +589,7 @@
         &__img {
           width: size-rem(74);
           height: size-rem(66);
-          background: url('../images/booking/trip-icon.svg') 50% 0px no-repeat;
+          background: url("../images/booking/trip-icon.svg") 50% 0px no-repeat;
         }
 
         .content-ongoing {
@@ -757,7 +757,7 @@
       padding-bottom: size-rem(100);
       position: relative;
       &:after {
-        content: url(/images/subscribe/plus.svg);
+        content: url("../images/subscribe/plus.svg");
         width: size-rem(153);
         height: size-rem(166);
         z-index: -1;
@@ -783,7 +783,7 @@
       }
 
       &:before {
-        content: url(/images/subscribe/left-circle.svg);
+        content: url("../images/subscribe/left-circle.svg");
         stroke: rgb(196, 196, 196);
         width: size-rem(390);
         height: size-rem(398);
@@ -795,7 +795,7 @@
       }
 
       &:after {
-        content: url(/images/subscribe/right-circle.svg);
+        content: url("../images/subscribe/right-circle.svg");
         width: size-rem(385);
         height: size-rem(291);
         z-index: 1;
@@ -810,7 +810,7 @@
       width: 70px;
       height: 70px;
       border-radius: 50%;
-      background: url('../images/subscribe/send.svg') no-repeat center;
+      background: url("../images/subscribe/send.svg") no-repeat center;
       position: absolute;
       right: size-rem(-20);
       top: size-rem(-13);
@@ -888,7 +888,7 @@
         background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
         border-radius: 10px;
         color: #ffffff;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         text-align: center;
         align-items: center;
         font-size: size-rem(17);

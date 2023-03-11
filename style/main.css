@@ -652,7 +652,7 @@
   height: 10.0625rem;
   border-radius: 1.5rem;
   border: 1px solid #000000;
-  background: url("/images/booking/view.png") no-repeat center/100%;
+  background: url("../images/booking/view.png") no-repeat center/100%;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -912,7 +912,7 @@
   position: relative;
 }
 .main .subscribe__container:after {
-  content: url(/images/subscribe/plus.svg);
+  content: url("../images/subscribe/plus.svg");
   width: 9.5625rem;
   height: 10.375rem;
   z-index: -1;
@@ -941,7 +941,7 @@
   }
 }
 .main .subscribe__wrapper:before {
-  content: url(/images/subscribe/left-circle.svg);
+  content: url("../images/subscribe/left-circle.svg");
   stroke: rgb(196, 196, 196);
   width: 24.375rem;
   height: 24.875rem;
@@ -953,7 +953,7 @@
           filter: grayscale(100%) opacity(0.2);
 }
 .main .subscribe__wrapper:after {
-  content: url(/images/subscribe/right-circle.svg);
+  content: url("../images/subscribe/right-circle.svg");
   width: 24.0625rem;
   height: 18.1875rem;
   z-index: 1;
@@ -1077,4 +1077,4 @@
   font-size: 1.0625rem;
   line-height: 1.4375rem;
   font-weight: 600;
-}/*# sourceMappingURL=main.css.map */
+}
